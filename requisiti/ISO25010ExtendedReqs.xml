@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<RefData version="1.0" exporter="EA.25">
+	<DataSet name="Requirement Types" table="t_requiretypes" filter="Requirement='#Requirement#'">
+		<DataRow>
+			<Column name="Requirement" value="Functional"/>
+			<Column name="Description" value="Functional requirement"/>
+			<Column name="NumericWeight" value="1,000000"/>
+		</DataRow>
+		<DataRow>
+			<Column name="Requirement" value="Satisfaction"/>
+			<Column name="Description" value="Satisfaction requirement"/>
+			<Column name="NumericWeight" value="1,000000"/>
+			<Column name="Notes" value="Subcharacteristics: Usefulness, Trust, Pleasure, Comfort."/>
+		</DataRow>
+		<DataRow>
+			<Column name="Requirement" value="ContextCover"/>
+			<Column name="Description" value="Context coverage requirement"/>
+			<Column name="NumericWeight" value="1,000000"/>
+			<Column name="Notes" value="Subcharacteristics: Context completeness, Flexibility."/>
+		</DataRow>
+		<DataRow>
+			<Column name="Requirement" value="FuncSuitabil"/>
+			<Column name="Description" value="Functional suitability requirement"/>
+			<Column name="NumericWeight" value="1,000000"/>
+			<Column name="Notes" value="Subcharacteristics: Functional completeness, Functional correctness, Functional appropriatesness."/>
+		</DataRow>
+		<DataRow>
+			<Column name="Requirement" value="Performance"/>
+			<Column name="Description" value="Performance efficiency requirement"/>
+			<Column name="NumericWeight" value="1,000000"/>
+			<Column name="Notes" value="Subcharacteristics: Time behaviour, Resource utilisation, Capacity."/>
+		</DataRow>
+		<DataRow>
+			<Column name="Requirement" value="Efficiency"/>
+			<Column name="Description" value="Efficiency requirement"/>
+			<Column name="NumericWeight" value="1,000000"/>
+		</DataRow>
+		<DataRow>
+			<Column name="Requirement" value="Portability"/>
+			<Column name="Description" value="Portability requirement"/>
+			<Column name="NumericWeight" value="1,000000"/>
+			<Column name="Notes" value="Subcharacteristics: Adaptability, Installability, Replaceability."/>
+		</DataRow>
+		<DataRow>
+			<Column name="Requirement" value="Reliability"/>
+			<Column name="Description" value="Reliability requirement"/>
+			<Column name="NumericWeight" value="1,000000"/>
+			<Column name="Notes" value="Subcharacteristics: Maturity, Availability, Fault tolerance, Recoverability."/>
+		</DataRow>
+		<DataRow>
+			<Column name="Requirement" value="Budget"/>
+			<Column name="Description" value="Budget requirement"/>
+			<Column name="NumericWeight" value="1,000000"/>
+			<Column name="Notes" value="Project Budget requirement. Not in ISO25010."/>
+		</DataRow>
+		<DataRow>
+			<Column name="Requirement" value="Time"/>
+			<Column name="Description" value="Time requirement"/>
+			<Column name="NumericWeight" value="1,000000"/>
+			<Column name="Notes" value="Project Timing requirement. Not in ISO25010."/>
+		</DataRow>
+		<DataRow>
+			<Column name="Requirement" value="Compliance"/>
+			<Column name="Description" value="Compliance requirement"/>
+			<Column name="NumericWeight" value="1,000000"/>
+			<Column name="Notes" value="Compliance (eg with laws or standards) requirement. Not in ISO25010."/>
+		</DataRow>
+		<DataRow>
+			<Column name="Requirement" value="Documenting"/>
+			<Column name="Description" value="Documentation requirement"/>
+			<Column name="NumericWeight" value="1,000000"/>
+			<Column name="Notes" value="Product documentation requirement. Not in ISO25010."/>
+		</DataRow>
+		<DataRow>
+			<Column name="Requirement" value="Support"/>
+			<Column name="Description" value="Support requirement"/>
+			<Column name="NumericWeight" value="1,000000"/>
+			<Column name="Notes" value="Product support requirement. Not in ISO25010."/>
+		</DataRow>
+		<DataRow>
+			<Column name="Requirement" value="Training"/>
+			<Column name="Description" value="Training requirement"/>
+			<Column name="NumericWeight" value="1,000000"/>
+			<Column name="Notes" value="Product training requirement. Not in ISO25010."/>
+		</DataRow>
+		<DataRow>
+			<Column name="Requirement" value="Usability"/>
+			<Column name="Description" value="Usability requirement"/>
+			<Column name="NumericWeight" value="1,000000"/>
+			<Column name="Notes" value="Subcharacteristics: Appropriateness recognisability, Learnability, Operability, User error protection, User interface aesthetics, Accessibility."/>
+		</DataRow>
+		<DataRow>
+			<Column name="Requirement" value="Security"/>
+			<Column name="Description" value="Security requirement"/>
+			<Column name="NumericWeight" value="1,000000"/>
+			<Column name="Notes" value="Subcharacteristics: Confidentiality, Integrity, Non-repudiation, Accountability, Authenticity."/>
+		</DataRow>
+		<DataRow>
+			<Column name="Requirement" value="Maintainable"/>
+			<Column name="Description" value="Maintainability requirement"/>
+			<Column name="NumericWeight" value="1,000000"/>
+			<Column name="Notes" value="Subcharacteristics: Modularity, Reusability, Analysability, Modifiability, Testability."/>
+		</DataRow>
+		<DataRow>
+			<Column name="Requirement" value="Compatible"/>
+			<Column name="Description" value="Compatibility requirement"/>
+			<Column name="NumericWeight" value="1,000000"/>
+			<Column name="Notes" value="Subcharacteristics: Co-existence, Interoperability."/>
+		</DataRow>
+		<DataRow>
+			<Column name="Requirement" value="Effective"/>
+			<Column name="Description" value="Effectiveness requirement"/>
+			<Column name="NumericWeight" value="1,000000"/>
+		</DataRow>
+		<DataRow>
+			<Column name="Requirement" value="RiskFree"/>
+			<Column name="Description" value="Freedom from risk requirement"/>
+			<Column name="NumericWeight" value="1,000000"/>
+			<Column name="Notes" value="Subcharacteristics: Economic risk mitigation, Health and safety risk mitigation, Environmental risk mitigation."/>
+		</DataRow>
+	</DataSet>
+</RefData>

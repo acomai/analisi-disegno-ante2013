@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
+    "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Errori casi d'uso - analisi-disegno.com</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="keywords" content="casi d'uso, use cases, errori" />
+<link rel="stylesheet" type="text/css" href="../analisi-disegno.css" />
+</head>
+
+<body>
+
+<p class="iniziale">analisi-disegno.com</p>
+	<p class="menu"><a href="../">Homepage</a>&nbsp;| 
+	<a href="../notiziario.html">Notiziario</a>&nbsp;| <a href="../welcome_e.html">In English</a></p>
+    <hr />
+
+      <h1>Casi d'uso: errori frequenti</h1>
+      <p>I <a href="usecases.htm">casi d'uso</a> sono semplici da leggere, e sono comprensibili da chiunque.</p>
+      <p>Sia per i non informatici (committenti, 
+        utenti) che per gli informatici, una descrizione delle modalit&agrave; 
+        di utilizzo del sistema basata sui casi d'uso permette di capire cosa 
+        fa il sistema molto pi&ugrave; velocemente e in profondit&agrave;, rispetto 
+        alle tradizionali documentazioni di requisiti o specifiche di analisi.</p>
+      <p>E non &egrave; neppure difficile 
+        scriverli. Scrivere i casi d'uso &egrave; come scrivere il manuale utente: 
+        si specifica la &quot;storia&quot; di un utilizzo del sistema, descrivendo 
+        le interazioni tra il sistema e il mondo esterno (utilizzatori, altri 
+        sistemi). Un lavoro da scrittore di manuali tecnici, ma che per gli utilizzi 
+        normali pu&ograve; essere svolto da chiunque abbia una padronanza normale 
+        della lingua.</p>
+      <p>Il problema vero, con i casi 
+        d'uso, &egrave; capire bene cosa sono, e soprattutto a cosa servono:</p>
+      <ul>
+        <li>sono una specifica che 
+          deve essere validata dai committenti e da altre eventuali parti interessate 
+          (stakeholders), come presupposto per la realizzazione del sistema</li>
+        <li>costituiscono l'input primario per lo sviluppo del software, e per il test funzionale.</li>
+      </ul>
+      <p>Bisogna evitare di ripetere 
+        con i casi d'uso gli errori delle specifiche di analisi tradizionali: 
+        tomi di carta che il committente non ha il coraggio di leggere, e che 
+        se legge non &egrave; sempre in grado di capire fino in fondo, per riscontrare 
+        errori ed omissioni.</p>
+      <p>Rispetto alle specifiche di 
+        analisi tradizionali, i casi d'uso hanno un vantaggio di fondo, in termini 
+        di comunicazione. Le specifiche funzionali tradizionali descrivono funzioni interne del sistema, 
+        in modo tipicamente astratto; i casi d'uso descrivono delle storie di utilizzo, 
+        in modo tipicamente concreto, sotto forma di dialogo: cosa fa l'utente, 
+        cosa risponde il sistema, ecc.</p>
+      <p>Purtroppo, molti analisti utilizzano i casi d'uso come se scrivessero una specifica di analisi tradizionale, e ricadono in descrizioni astratte di funzionalit&agrave; 
+        poco leggibili e validabili. Di seguito, gli errori pi&ugrave; frequenti</p>
+      <hr />
+      <h2>1: usarli per descrivere le funzionalit&agrave; interne del sistema, anzich&eacute; 
+        le modalit&agrave; di utilizzo del sistema da parte di soggetti esterni 
+        al sistema (gli &quot;attori&quot;).</h2>
+      <p>I casi d'uso hanno uno specifico 
+        <a href="usecase_ambito.htm">ambito di applicazione</a>. Servono a descrivere 
+        la logica di interazione tra il sistema e ci&ograve; che &egrave; esterno 
+        ad esso.</p>
+      <p>Alcuni, invece, utilizzano i casi d'uso per descrivere i 
+        diversi step di una procedura batch, o le funzioni elementari di creazione, 
+        lettura, aggiornamento ed eliminazione di ogni entit&agrave; del sistema. 
+        In altri termini, i casi d'uso vengono usati in una logica di vera 
+        e propria scomposizione funzionale, per la quale non sono adeguati.</p>
+      <p>In questo modo, si perdono 
+        completamente tutti i vantaggi dei casi d'uso, sotto il profilo della 
+        comunicazione con il committente e gli altri stakeholders. E' opportuno 
+        ricordare che i casi d'uso devono fornire una descrizione degli utilizzi 
+        del sistema, non descrivere a livello atomico ogni singola funzione del 
+        sistema: non bisogna usare i casi d'uso come se si stesse seguendo 
+        un approccio di <a href="../dfd/metodistrutturati.htm">analisi strutturata</a>.</p>
+      <p>I casi d'uso servono a descrivere 
+        la logica di interazione tra il sistema e ci&ograve; che &egrave; esterno 
+        ad esso. Non a specificare la logica interna di una qualunque funzionalit&agrave; 
+        o di una qualunque parte di sistema. Esistono altre tecniche molto pi&ugrave; 
+        adeguate, per farlo. Ad esempio i diagrammi di flusso (flow-chart), presenti 
+        anche in UML con il nome di activity diagram.</p>		
+      <hr />
+      <h2>2: frammentarli in modo eccessivo</h2>
+      <p>In molti sistemi, di media o elevata complessit&agrave;, vengono individuate e definite parecchie centinaia, 
+        se non migliaia di casi d'uso (in particolare, quando ci si avvale in modo 
+        sistematico dei meccanismi di associazione previsti da UML - include, extend, 
+        specializzazione).</p>
+        <p>Pensate al povero committente che dovrebbe validare centinaia o migliaia 
+        di casi d'uso corrispondenti a funzionalit&agrave; &quot;elementari&quot; 
+        del sistema!</p> 
+		<p>(Se vi trovate in una situazione del genere: 
+        raggruppate pi&ugrave; casi d'uso &quot;atomici&quot; in storie pi&ugrave; 
+        aggregate (casi d'uso &quot;business&quot;), che descrivano gli utilizzi 
+        del sistema ad un livello significativo per il committente, e presentate 
+        le storie aggregate per la validazione.)</p>
+      <hr />
+      <h2>3: dare troppa importanza ai diagrammi</h2>
+      <p>I diagrammi UML dei casi d'uso forniscono una mappa visuale degli utilizzi del sistema. Utile, 
+        anche se non indispensabile.</p>
+      <p>I diagrammi non servono alla 
+        validazione da parte dei committenti e delle altre parti interessate a 
+        comprendere le modalit&agrave; di utilizzo del sistema. Ed hanno un'utilit&agrave; 
+        molto limitata anche per chi deve realizzare il software.</p>
+      <p>Si tratta di 
+        un errore molto comune, e non sono rare le situazioni in cui gli analisti 
+        spendono molto tempo a lavorare sui diagrammi invece di descrivere 
+        i casi d'uso in modo approfondito a livello testuale.</p>
+      <p>Un sintomo significativo dell'eccessiva 
+        enfasi sui diagrammi &egrave; l'utilizzo sistematico dei meccanismi di 
+        associazione UML - include, extend, specializzazione. La grande maggioranza 
+        degli esperti ritiene tali meccanismi perniciosi (con la parziale eccezione 
+        dell'&quot;include&quot;), in quanto:</p>
+      <ul>
+        <li>Costituiscono una delle 
+          cause principali di frammentazione dei casi d'uso</li>
+        <li>Generano confusione: &egrave; sempre possibile trattare una specifica situazione 
+          di variante usando uno o l'altro dei tre meccanismi, indifferentemente.</li>
+        <li>Favoriscono l'opinione - 
+          scorretta - che la scelta di utilizzare l'uno o l'altro dei tre meccanismi 
+          fornisca una qualche indicazione relativa alle scelte implementative 
+          di chi dovr&agrave; realizzare il sistema.</li>
+      </ul>
+      <hr />
+      <h2>4: descrizioni improprie</h2>
+      <p>Le descrizioni dei casi d'uso 
+        rivestono un'importanza fondamentale, sia per chiarire e concordare i 
+        requisiti che come input per chi deve realizzare il sistema. Ma non raggiungono 
+        l'obiettivo quando:</p>
+      <ul>
+        <li>sono troppo sintetiche</li>
+        <li>non &quot;raccontano una 
+          storia&quot; di utilizzo (come avviene in un manuale utente scritto 
+          in modo chiaro), ma descrivono una funzionalit&agrave; in termini astratti</li>
+        <li>descrivono la logica interna 
+          di funzionamento del sistema, anzich&eacute; le sue interazioni con 
+          i soggetti esterni (gli attori)</li>
+        <li>infarciscono la descrizione 
+          delle interazioni con indicazioni di livello tecnico relative ai singoli 
+          campi di input e output, ai relativi data type, ai controlli da effettuare, 
+          alla specifica di algoritmi...</li>
+      </ul>
+      <hr />
+      <p><a href="usecases.htm">Pagina 
+        introduttiva casi d'uso</a></p>
+	<hr />
+	<p class="centered"><a href="../"> analisi-disegno.com </a>, servizi e materiali per lo sviluppo dei sistemi software, a cura di <a href="../a_comai/adriano_comai.htm">Adriano 
+  		Comai</a>. </p>  
+</body>
+</html>

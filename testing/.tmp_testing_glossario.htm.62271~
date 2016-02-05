@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
+    "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Glossario sul software testing - analisi-disegno.com</title>
+<meta name="keywords" content="testing, software, glossario" />
+<meta name="description" content="Mini glossario sul software testing." />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="author" content="Adriano Comai" />
+<meta name="robots" content="noarchive" />
+<link rel="stylesheet" type="text/css" href="../analisi-disegno.css" />
+</head>
+
+<body>
+<p class="iniziale">analisi-disegno.com</p>
+	<p class="menu"><a href="../index.html">Homepage</a>&nbsp;| 
+	<a href="../notiziario.html">Notiziario</a>&nbsp;| <a href="../welcome_e.html">In English</a></p>
+    <hr />
+	
+      <h1>Glossario sul software testing</h1>
+
+<p>Parlando di testing, accade spesso che non ci sia accordo sul significato delle parole. 
+I termini usati nel campo della disciplina del testing sono tanti, e sono molte anche le possibilità di confusione.
+Nel seguito proponiamo alcuni dei termini più comuni, con le definizioni tratte dal Software Engineering Body of Knowledge 
+(SWEBOK) e dall'IEEE Std 829-1998 - Standard for Software Test Documentation, riferimenti autorevoli a livello internazionale.</p>
+
+<p>Nota: in alcuni casi si è preferito utilizzare due definizioni per un singolo termine (es. test di integrazione), 
+perché ciascuna ne mette in luce un aspetto in modo più chiaro. Le due definizioni vanno quindi intese come complementari, non come alternative.</p>
+
+<p>Questo mini glossario è organizzato per macro argomenti, che contengono le voci individuali. 
+Poiché a volte vengono usati anche termini inglesi, tali termini sono riportati dopo quelli italiani.</p>
+
+<p><a href="#Finalità">Finalità del test</a>:</p>
+<ul><li>validazione</li>
+<li>verifica</li></ul>
+
+<p><a href="#Oggetto">Oggetto sottoposto al test</a>:</p>
+<ul><li>test unitari - unit test</li>
+<li>test di integrazione - integration test</li>
+<li>test di sistema - system test</li></ul>
+
+<p><a href="#Livello">Livello di effettuazione dei test</a>:</p>
+<ul><li>alpha test</li>
+<li>beta test</li>
+<li>test di accettazione - acceptance test</li></ul>
+
+<p><a href="#Aspetti">Aspetti sottoposti a test</a>:</p>
+<ul><li>test funzionali e non funzionali</li>
+<li>test di usabilità</li>
+<li>test prestazionale - performance test</li>
+<li>test di carico - stress test</li>
+<li>test di installazione</li></ul>
+
+<p><a href="#Modalità">Modalità di test</a>:</p>
+<ul><li>test a scatola nera - black box test</li>
+<li>test a scatola trasparente - glass box test</li>
+<li>test di regressione - regression test</li>
+<li>sviluppo guidato dai test - test driven development (TDD)</li></ul>
+
+<p><a href="#Output">Output delle attività di test</a>:</p>
+<ul><li>piano di test</li>
+<li>specifiche di test</li>
+<li>report di test</li></ul>
+      <hr />
+
+<h2><a name="Finalità">Finalità</a> del test</h2>
+
+<h3>Validazione</h3>
+<p>Conferma (tramite esame e fornitura di evidenza oggettiva) che i requisiti particolari per uno specifico utilizzo 
+sono stati soddisfatti. In progettazione e sviluppo, la validazione è il processo che esamina un prodotto per determinarne 
+la conformità con le esigenze utente. [IEEE Stds Glossary]</p>
+
+<h3>Verifica</h3>
+<p>Conferma (tramite esame e fornitura di evidenza oggettiva) che i requisiti specificati sono stati soddisfatti. 
+In progettazione e sviluppo, la verifica è il processo che esamina il risultato di una attività per determinarne la conformità 
+con i requisiti formulati per l'attività stessa. [IEEE Stds Glossary]</p>
+	  
+      <hr />	  
+	  
+<h2><a name="Oggetto">Oggetto</a> dei test</h2>
+<h3>Test unitari</h3>
+
+<p>Il testing di unità verifica il funzionamento isolato delle parti software che sono testabili separatamente. 
+In funzione del contesto, le parti testate possono essere singoli moduli, oppure un componente di dimensioni maggiori, 
+costituito da unità strettamente correlate tra loro. Tipicamente, il testing di unità viene effettuato con accesso al codice 
+testato e con il supporto di strumenti per il debugging. [Swebok 2004]</p>
+
+<p>Il testing a livello unitario è focalizzato su unità isolate del prodotto (moduli, classi, funzioni). [Kaner Bach 2005]</p>
+
+<h3>Test di integrazione</h3>
+
+<p>Il testing di integrazione è il processo di verifica dell'interazione tra componenti software. Le strategie classiche di test 
+di integrazione, top-down o bottom-up, vengono utilizzate con il software tradizionale, strutturato in modo gerarchico. 
+Le strategie moderne di integrazione sistematica sono invece guidate dall'architettura, cioè i componenti e sottosistemi software 
+vengono integrati sulla base delle funzionalità identificate.
+Il testing a livello di integrazione è un'attività continuativa. Tranne i casi di software molto piccoli e semplici, 
+le strategie di test di integrazione sistematiche ed incrementali sono da preferire rispetto alla strategia di mettere tutti 
+i componenti insieme nello stesso momento, in quello che viene chiamato "big bang" testing. [Swebok 2004]</p>
+
+<p>I test di integrazione verificano come due (o più) unità lavorano insieme. [Kaner Bach 2005] </p>
+
+<h3>Test di sistema</h3>
+
+<p>Il testing a livello di sistema si preoccupa del comportamento di un sistema nel suo complesso. La maggior parte degli errori 
+dovrebbe essere già stato identificato durante il testing unitario e di integrazione. Il test di sistema viene di solito considerato 
+appropriato per verificare il sistema anche rispetto ai requisiti non funzionali, come quelli di sicurezza, velocità, accuratezza 
+ed affidabilità. A questo livello vengono anche testate le interfacce esterne nei confronti di altre applicazioni, componenti 
+standard, dispositivi hardware e ambiente operativo. [Swebok 2004]</p>
+     <hr />	
+	 
+<h2><a name="Livello">Livello di effettuazione</a> dei test</h2>
+<h3>Alfa e Beta test</h3>
+
+<p>Prima che il software venga rilasciato, viene a volte reso disponibile per un utilizzo di prova ad un gruppo, limitato ma 
+rappresentativo, di utenti potenziali. Ciò può accadere presso gli sviluppatori (alpha testing) o presso gli utilizzatori (beta testing). 
+Gli utenti che partecipano al test segnalano i problemi riscontrati nell'utilizzo del prodotto. Alpha e beta test sono spesso 
+svolti in modo poco controllato, e non vengono sempre esplicitati nel piano di test. [Swebok 2004]</p>
+
+<h3>Test di accettazione</h3>
+
+<p>Il testing di accettazione controlla il comportamento del sistema rispetto ai requisiti (comunque espressi) del committente. 
+I clienti effettuano, o specificano, attività tipiche di uso del sistema, per controllare che i 
+loro requisiti siano stati soddisfatti. Questa attività di test può coinvolgere o meno gli sviluppatori del sistema. [Swebok 2004]</p>
+
+<p>Testing condotto in un ambiente operativo reale per determinare se un sistema soddisfa i propri criteri di accettazione 
+(ad esempio i requisiti iniziali, e le attuali esigenze dei suoi utenti) e per permettere al cliente di determinare se 
+accettare o meno il sistema [IEEE Stds Glossary]</p>
+     <hr />	  
+
+<h2><a name="#Aspetti">Aspetti sottoposti a test</a></h2>
+<h3>Test funzionali e non funzionali</h3>
+
+[Swebok 2004]
+Test cases can be designed to check that the functional specifications are correctly implemented, which is variously referred to in the literature as conformance testing, correctness testing, or functional testing. However, several other non functional properties may be tested as well, including performance, reliability, and usability, among many others.
+
+Possono essere progettati dei casi di test per verificare che le specifiche funzionali siano state implementate correttamente. Queste tipologie di test sono chiamate in letteratura test di conformità, o test di correttezza, o test funzionale. In ogni caso, possono essere testate anche numerose altre proprietà non funzionali, tra cui le prestazioni, l’affidabilità e l’usabilità.
+
+[Kaner Bach 2005] 
+Functional testing is behavioural testing (focused on the observable behavior of the Product) that looks at the program as a collection of functions (features).Functional testers may focus too narrowly on capability (can the program do this) and reliability, ignoring the non functional attributes, such as usability, scalability, maintainability, speed, security, localizability, supportability, et cetera.
+
+Il test funzionale è un tipo di test comportamentale (cioè focalizzato sul comportamento osservabile del prodotto) che guarda al sistema come ad una collezione di funzioni. Chi effettua i test funzionali rischia di focalizzarsi esclusivamente sulla presenza e l’affidabilità delle funzioni, tralasciando le caratteristiche non funzionali, come usabilità, scalabilità, mantenibilità, velocità, sicurezza, possibilità di adattamento a condizioni locali, adeguatezza per il servizio, eccetera.
+
+     <hr />	  
+      <p><a href="../testing/testing.htm">Pagina principale sul testing</a></p>
+
+
+     <hr />
+	<p class="centered"><a href="../index.html"> analisi-disegno.com </a>, servizi e materiali per lo sviluppo dei sistemi software, a cura di <a href="../a_comai/adriano_comai.htm">Adriano 
+  		Comai</a>. </p>
+</body>
+
+</html>

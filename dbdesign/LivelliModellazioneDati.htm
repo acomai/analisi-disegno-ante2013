@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
+    "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Livelli modellazione dati - concettuale logico fisico - analisi-disegno.com</title>
+<meta name="keywords" content="modello, dati, concettuale, logico, fisico" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<link rel="stylesheet" type="text/css" href="../analisi-disegno.css" />
+</head>
+
+<body>
+<p class="iniziale">analisi-disegno.com</p>
+	<p class="menu"><a href="../">Homepage</a>&nbsp;| <a href="../welcome_e.html">In English</a></p>
+    <hr />
+	
+      <h1>Livelli modellazione dati - concettuale, logico, fisico</h1>
+      <h2>I livelli</h2>
+      <p>Quando si parla di modelli 
+        dati, si fa spesso riferimento a termini quali &quot;concettuale&quot;, 
+        &quot;logico&quot; e &quot;fisico&quot;. E spesso ci si confonde, in quanto 
+        questi termini significano cose diverse per persone diverse. O in strumenti 
+        diversi. Puntualizziamo:</p>
+      <ul>
+        <li>Il livello &quot;concettuale&quot; 
+          rappresenta, in modo non necessariamente dettagliato, concetti e relazioni 
+          tra concetti. &Egrave; completamente indipendente dalla tecnologia DBMS (Data 
+          Base Management System) che gestir&agrave; le strutture dati.</li>
+        <li>Il livello &quot;logico&quot; 
+          produce un modello dettagliato, guidato essenzialmente dalle relazioni 
+          di significato tra i dati. &Egrave; il livello di definizione delle tabelle 
+          in un DBMS relazionale, con indicazione di colonne e data type, chiavi 
+          primarie ed alternative, regole di integrit&agrave;. Tutto ci&ograve; 
+          di cui chi accede alle tabelle deve essere consapevole. A differenza 
+          del modello concettuale, pu&ograve; essere un modello ottimizzato. Pu&ograve;, 
+          ad esempio, comprendere ridondanze introdotte per migliorare le tempistiche 
+          di accesso in consultazione.</li>
+        <li>Il livello &quot;fisico&quot; 
+          &egrave; quello in cui si definiscono caratteristiche utili per l'ottimizzazione 
+          delle prestazioni e della memoria (es. indici, percentuali di spazio 
+          disponibile per inserimento di nuove righe) o per la gestione del DBMS 
+          (es. organizzazione in data base e table space).</li>
+      </ul>
+      <p>Per la progettazione del livello 
+        fisico &egrave; essenziale una competenza specialistica, tipica di un 
+        progettista DB. Per la 
+        definizione dei modelli concettuale e logico iniziale, invece, &egrave; 
+        sufficiente la conoscenza di tecniche di modellazione basilari, che si 
+        basano sull'analisi del significato dei dati (Entity-Relationship, normalizzazione).</p>
+      <p>La tabella seguente sintetizza le differenze tra i livelli:</p>
+      <table border="1">
+        <tr> 
+          <td>Livello</td>
+          <td>Concettuale</td>
+          <td>Logico</td>
+          <td>Fisico</td>
+        </tr>
+        <tr> 
+          <td>Conoscenza primaria necessaria</td>
+          <td>Significato dei dati</td>
+          <td>Significato dei dati</td>
+          <td>Caratteristiche DBMS</td>
+        </tr>
+        <tr> 
+          <td>Ruolo del modello nei progetti</td>
+          <td>Preliminare</td>
+          <td>Intermedio</td>
+          <td>Prodotto finale</td>
+        </tr>
+        <tr> 
+          <td>Ottimizzazioni (per performance, contenimento spazio ecc.)</td>
+          <td>Nessuna</td>
+          <td>Il modello 
+            logico iniziale &egrave; pienamente normalizzato, cio&egrave; privo 
+            di ridondanze. Pu&ograve; essere successivamente ottimizzato sulla 
+            base delle esigenze funzionali.</td>
+          <td>Quelle opportune per le esigenze funzionali</td>
+        </tr>
+        <tr> 
+          <td>Legame con tecnologia DBMS</td>
+          <td>Nessuno</td>
+          <td>Medio</td>
+          <td>Elevato</td>
+        </tr>
+        <tr> 
+          <td>Tecniche di progettazione primarie</td>
+          <td>Entity-Relationship</td>
+          <td>Entity-Relationship, normalizzazione</td>
+          <td>Ad hoc, mirate all'ottimizzazione degli accessi e degli spazi</td>
+        </tr>
+      </table>
+
+      <h2>Precisione del modello dati logico</h2>
+      <p>Il modello logico &egrave; l'input per la progettazione fisica dei Data Base, 
+        ed &egrave; opportuno che raggiunga il massimo livello di precisione possibile. 
+        (Naturalmente, il massimo livello di precisione possibile viene raggiunto 
+        progressivamente, nell'ambito di un progetto.) Un modello logico preciso 
+        comprende:</p>
+      <ul>
+        <li>per ogni entit&agrave;, l'elenco completo degli attributi</li>
+        <li>per ogni entit&agrave;, l'indicazione esplicita della chiave primaria e di eventuali chiavi alternative</li>
+        <li>per ogni attributo, l'indicazione esplicita di opzionalit&agrave; o obbligatoriet&agrave;</li>
+        <li>per ogni attributo, l'indicazione esplicita del data type, che ne specifichi il formato e la lunghezza</li>
+        <li>per ogni data type per cui sia possibile farlo (pochi valori stabili, oppure range), l'esplicitazione 
+          dei valori ammessi</li>
+        <li>per ogni relationship, l'indicazione della molteplicit&agrave; minima e massima in entrambe le direzioni</li>
+        <li>per ogni relationship, l'indicazione delle regole di integrit&agrave; referenziale applicabili</li>
+      </ul>
+      <p>Il modello logico deve, cio&egrave;, 
+        contenere tutte le informazioni necessarie che non sono legate a competenze 
+        di natura tecnica, ma che derivano invece dalla conoscenza approfondita 
+        dell'ambito applicativo, e quindi del significato dei dati.</p>
+      <hr />
+      <h2>Creazione del modello dati concettuale</h2>
+      <p>Il modello dati pu&ograve; essere costruito in modo &quot;top-down&quot; o &quot;bottom up&quot;. 
+        Il risultato pu&ograve; essere identico, ma le modalit&agrave; per arrivarci sono diverse.</p>
+      <p>Un modello &egrave; costruito 
+        in modo &quot;top-down&quot; se nasce in modo unitario, prescindendo da 
+        analisi preventive di porzioni del sistema (&quot;subject area&quot;).</p>
+      <p>&Egrave;  invece costruito in modo 
+        &quot;bottom up&quot; se il modello finale &egrave; il frutto dell'aggregazione 
+        di pi&ugrave; modelli settoriali.</p>
+      <p>Ad esempio, in un progetto 
+        che utilizza i casi d'uso per la specifica dei requisiti, il modello dei 
+        dati pu&ograve; essere costruito in due modi alternativi:</p>
+      <ol><li>Prima di avere definito 
+        in dettaglio i casi d'uso, in modo unitario, viene creata una versione 
+        iniziale del modello. Successivamente, man mano che i singoli casi d'uso 
+        vengono dettagliati, il modello unitario viene arricchito e completato 
+        con nuovi attributi ed associazioni.</li>
+      <li>Per ogni caso d'uso gi&agrave; 
+        dettagliato, viene definito un modello dei dati parziale, o &quot;vista 
+        locale&quot;. Il modello unitario verr&agrave; derivato passo passo, attraverso 
+        l'integrazione progressiva delle viste locali create per ogni caso d'uso.</li></ol>
+
+     <hr />
+	<p class="centered"><a href="../"> analisi-disegno.com </a>, servizi e materiali per lo sviluppo dei sistemi software, a cura di <a href="../a_comai/adriano_comai.htm">Adriano 
+  		Comai</a>. </p>
+</body>
+
+</html>

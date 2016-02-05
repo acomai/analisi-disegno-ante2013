@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
+    "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Technology Transfer notizie - 22 aprile 2013</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<link rel="stylesheet" type="text/css" href="../analisi-disegno.css" />
+</head>
+
+<body ><font face="verdana">
+	<p><small>Se le immagini non risultano visibili, potete leggere TT Notizie nel <a href="http://www.analisi-disegno.com/files/TTnews.htm">vostro browser</a>.</small></p>
+	<hr>
+	<p><img src="http://www.analisi-disegno.com/files/ttlogo.gif" width="339" height="62" align="right" alt="logo TT" /></p>
+	<h1>TT Notizie</h1>
+	<ul>
+		<li><a href="#punto">Modello di dominio</a></li>
+		<li><a href="#segnalazioni">Segnalazioni</a></li>
+		<li><a href="#intervento">Intervento: Perché è meglio evitare il private cloud?</a></li>
+		<li><a href="#seminario">Seminario in evidenza: Come allineare i sistemi IT con le strategie di Business?</a></li>
+		<li><a href="#elenco">Elenco prossimi seminari e corsi pubblici</a></li>
+		<li><a href="#info">Informazioni pratiche e contatti</a></li>
+	</ul>
+	<hr>
+	
+	<h2><a name="punto" id="punto">Modello di dominio</a></h2>
+
+<p>Il modello di dominio consiste nella definizione dei concetti propri di un ambito applicativo, e delle loro associazioni.
+</p>
+<p>Se descriviamo un sistema di formazione, saranno concetti come Scuola, Classe, Materia, Insegnante, Allievo. Nella telefonia, saranno concetti come Chiamante, Destinatario, Chiamata, Operatore. In banca, Cliente, Conto, Movimento, Mutuo. Nessun aspetto tecnologico, solo concetti usati da chi opera nell’ambito della materia di riferimento.
+</p>
+<p>La definizione di questi concetti è un aspetto cruciale di ogni progettazione. Prendiamo ad esempio l’ambito editoriale. Cos’è un libro? Cosa si intende per libro?
+</p>
+<p>Il concetto di “libro” può corrispondere a diverse cose, ad esempio a:</p>
+<ul>
+<li>“Promessi sposi” di Alessandro Manzoni (l'opera in sé, indipendentemente dalle diverse edizioni in cui è stata pubblicata, dal 1840 ad oggi)</li>
+<li>“Promessi sposi” di Manzoni, Garzanti, I grandi libri, 2002 (una specifica edizione)</li>
+<li>una copia fisica dell’edizione Garzanti 2002 dei “Promessi sposi”</li>
+</ul>
+<p>Tre cose diverse, con ambiguità da chiarire il prima possibile, per progettare, implementare e verificare la correttezza delle funzioni di un sistema in modo da soddisfare i requisiti degli utenti.
+</p>
+<p>La tecnica tradizionale per la definizione del modello di dominio è l’Entity-Relationship (Entità Relazioni) di Peter Chen, proposta negli anni ‘70 per la progettazione logica delle basi dati. Con la diffusione dell’approccio object oriented, la modellazione dei concetti del dominio è poi arrivata a includere anche la dimensione funzionale associata ai concetti, oltre alla parte relativa agli attributi.
+</p>
+<p>Comunque intesa, la modellazione del dominio basata sul significato dei concetti implica una conoscenza approfondita della materia, e costituisce la base per una migliore definizione delle funzioni applicative.
+</p>                  
+<p>Un modello di dominio efficace può anche migliorare la qualità della collaborazione tra esperti della materia, analisti applicativi e sviluppatori, attraverso la condivisione di conoscenza sui concetti e sul loro significato, con riferimento ad un vocabolario e a delle regole di integrità condivise. E può ridurre notevolmente i rischi di progetto.
+</p>
+<p><center>Adriano Comai</center></p>
+	<hr>
+	<h1><a name="segnalazioni" id="segnalazioni">Segnalazioni</a></h1>
+	
+          <p>*** <strong>Ancora sul modello di dominio</strong> ***</p>
+ 
+      <p><a href="http://wirfs-brock.com/blog/2013/02/27/why-domain-modeling/">Why Domain Modeling</a>, 
+      	di Rebecca Wirfs-Brock, esperta di progettazione software e ideatrice dell'approccio Responsibility Driven Design.</p>
+
+      	
+      <hr />
+	  
+      <p>*** <strong>Usabilità e Quality Assurance</strong> ***</p>
+<p>"La Quality Assurance (operare con un alto livello di qualità) è molto più efficace del Quality Control 
+(controllare il livello di qualità quando si ha finito di operare). Meglio introdurre criteri di usabilità 
+dall'inizio - ancora prima di iniziare la progettazione - che aspettare fino a quando il sistema è completo 
+per poi sottoporlo ad una validazione nel testing utente."</p>
+
+<p>Jacob Nielsen, esperto di usabilità, in un <a href="http://www.nngroup.com/articles/quality-assurance-ux/">articolo su Quality Assurance e User Experience</a> ricorda anche 
+quella che chiama la "prima legge dell'usabilità":</p>
+
+<p>"La vostra progettazione sarà comunque testata dagli utenti - potete solo scegliere se fare voi stessi i test 
+prima del rilascio, per mettere a posto a costi inferiori gli inevitabili problemi, oppure spendere molto di 
+più dopo il rilascio."</p>
+
+      <hr />
+	  
+      <p>*** <strong>No DBA</strong> ***</p>
+<p>In molte organizzazioni la <a href="http://www.analisi-disegno.com/a_comai/corsi/sk_dati.htm">progettazione delle basi dati</a> è un'attività centralizzata, delegata ad un ruolo 
+distinto dai gruppi di sviluppo, la Data Base Administration (DBA).
+Le ragioni sono due: favorire una migliore integrazione dei dati tra i diversi sistemi che vi accedono, 
+e usare al meglio competenze specialistiche particolari, come quelle necessarie per ottimizzare le prestazioni 
+negli accessi.</p>
+
+<p>A volte, purtroppo, la DBA centralizzata diventa un collo di bottiglia, e ricorrere ai servizi che offre crea 
+impedimenti e ritardi ai progetti.</p>
+
+<p>Martin Fowler, nell'<a href="http://martinfowler.com/bliki/NoDBA.html">articolo "No DBA"</a>, rileva che questi impedimenti possono portare in alcuni casi i gruppi di 
+sviluppo alla scelta di non usare i DBMS relazionali, gestiti dalla DBA, sostituendoli con altri tipi di 
+tecnologia, come i DBMS NoSQL, che invece la DBA non presidia e che vengono gestiti direttamente dai progetti. 
+E che ciò accade anche quando per le caratteristiche dei progetti un DBMS relazionale andrebbe meglio.</p>
+     <hr />
+	  
+      <p>*** <strong>L'outsourcing del software sta cambiando</strong> ***</p>
+<p>Alcune grandi aziende statunitensi, come General Electric e General Motors, ricostruiscono il proprio settore 
+di sviluppo software, dopo anni di outsourcing, per fornire un supporto più efficace ed efficiente alle 
+proprie strategie. Intanto, le grandi software house indiane assumono sviluppatori negli USA.</p>
+
+<p>Un inserto speciale di The Economist su Outsourcing e Offshoring, con un 
+	<a href="http://www.economist.com/news/special-report/21569576-developed-countries-are-beginning-take-back-service-industry-jobs-too-next-big">
+		articolo dedicato allo sviluppo software.</a></p>     
+
+<hr />
+     
+           <p>*** <strong>Lean Startup</strong> ***</p>
+<p><a href="http://www.amazon.it/The-Lean-Startup-Entrepreneurs-Continuous/dp/0307887898/">Lean Startup</a>, di Eric Ries, è un libro sull'innovazione di prodotto, non (o almeno non solo, come farebbe 
+pensare il titolo) sul lancio di nuove iniziative imprenditoriali.</p>
+
+<p>Il successo di un prodotto, spiega Ries, nasce spesso dall'aver imparato le lezioni necessarie dal fallimento 
+di precedenti tentativi. Per questo motivo, ogni tentativo di innovazione va condotto come un prototipo da 
+controllare e misurare, ottenendo riscontri concreti e verificabili, rapidamente e con il minor costo possibile. 
+Per poter poi aggiustare il tiro.</p>
+     <hr />
+
+           <p>*** <strong>bpmNEXT</strong> ***</p>
+<p>bpmNEXT è una conferenza sul Business Process Management, con una particolarità: è pensata come uno scambio di 
+informazioni e di opinioni tra i produttori di strumenti, più che come una vetrina a fini commerciali. Utile, 
+quindi, per farsi un'idea sulle tendenze dei prodotti nel campo dei BPMS (Business Process Management Systems) 
+e del <a href="http://www.analisi-disegno.com/bpmn">BPMN (Business Process Model and Notation)</a>.</p>
+
+<p>Resoconti della conferenza da uno degli organizzatori, <a href="http://brsilver.com/bpmnext-review/">Bruce Silver</a>, 
+	da <a href="http://www.bptrends.com/deliver_file.cfm?fileType=publication&fileName=advisor20130326%2Epdf">Paul Harmon</a> 
+	e da <a href="http://www.column2.com/2013/03/bpmnext-wrapup-the-good-the-bad-and-the-best-in-show/">Sandy Kemsley</a>.</p>
+
+     <hr />
+     
+           <p>*** <strong>Requisiti e architettura software, coevoluzione</strong> ***</p>
+<p>In ogni processo di sviluppo software pragmatico, requisiti e architettura evolvono insieme.</p>
+
+<p>"The Twin Peaks of Requirements and Architecture" è il tema centrale del numero di 
+	<a href="http://www.computer.org/csdl/mags/so/2013/02/index.html">marzo / aprile 2013 di IEEE Software</a>.</p>
+	<hr>
+	<p>Per ulteriori notizie e approfondimenti sullo 
+		sviluppo software: <a href="www.analisi-disegno.com">www.analisi-disegno.com</a></p>
+	<hr>
+	<h1><a name="intervento" id="intervento">Perché è meglio evitare il private cloud?</a></h1>
+	<p><img src="http://www.analisi-disegno.com/files/Jason_Bloomberg_opt.jpg" width=140 alt="Jason Bloomberg" border=0 align="right" hspace=6>
+	by <a href="?kLang=1&cis=3&rec=1" title="Visualizza la scheda di Jason Bloomberg"><i>Jason Bloomberg</i></a>
+</p>
+<p><p>Ho avuto il piacere di parlare a due recenti conferenze sul cloud computing: una dal titolo Business of Cloud Computing si &egrave; tenuta negli Stati Uniti, l&rsquo;altra CloudConnect ha avuto luogo in India. Come suggeriscono i nomi e i luoghi di queste due conferenze, la prima aveva un taglio pi&ugrave; business-oriented, la seconda uno molto pi&ugrave; tecnico. La cosa pi&ugrave; interessante che &egrave; emersa - e su cui voglio riflettere - &egrave; la differente opinione che i due audience hanno manifestato nei confronti del cloud privato. Le persone con un profilo pi&ugrave; tecnico considerano la public cloud troppo rischiosa e, di conseguenza, sono dell&rsquo;idea che le organizzazioni debbano concentrare i propri sforzi nella creazione di un modello di sviluppo di tipo privato. L&rsquo;audience americano, di contro, privilegia l&rsquo;approccio public cloud, con talune persone che arrivano a sostenere che questo modello sia l&rsquo;unico, vero e autentico, approccio al cloud. La distinzione &egrave; considerevole e riflette il pensiero di ZapThink. Pi&ugrave; ci si focalizza sui vantaggi business del cloud, pi&ugrave; aumenta la convinzione che il modello da seguire sia quello pubblico. Pi&ugrave; si va a fondo alla questione, pi&ugrave; ci si accorge che non esiste nessuna valida argomentazione di tipo business per assecondare un approccio privato.</p>
+<p><b>I problemi del private cloud</b> - Il modo migliore per comprendere i limiti di un modello cloud privato &egrave; prendere in considerazione una prospettiva business. Quali sono i business benefit che muovono verso il cloud? Analizziamoli. Il cloud implica un cambiamento da spesa in conto capitale a spesa operativa. Invece di investire in hardware e software si pu&ograve; adottare un modello a consumo. Da spesa capitale l&rsquo;investimento &egrave; traslato in spesa operativa e quest&rsquo;ultima pu&ograve; essere detratta dalle tasse. Il modello privato non consente tutto ci&ograve;, poich&eacute; la creazione dell&rsquo;infrastruttura di data center ricade sull&rsquo;organizzazione. Significa che il cloud privato comporta un aumento in spesa capitale.<br />
+Il cloud consente un migliore utilizzo dei server per fare fronte ai picchi di domanda. Invece di metter a punto data center con capacit&agrave; server maggiore a quella mediamente utilizzata, ma necessaria per rispondere a eventuali picchi di domanda, si pu&ograve; metter a punto un modello cloud. Un&rsquo;infrastruttura di questo tipo consente un pi&ugrave; efficiente utilizzo della potenza elaborativa grazie all&rsquo;elasticit&agrave; con cui possono essere gestiti i picchi di domanda. Questo non si pu&ograve; ottenere con il private cloud a meno che la vostra organizzazione sia talmente grande da prevedere che la cloud possa essere condivisa da pi&ugrave; divisioni. Tuttavia, anche in questo caso, nell&rsquo;ipotesi di un evento di picco di traffico generalizzato, potrebbe verificarsi un problema di insufficiente disponibilit&agrave; di potenza elaborativa. Se associato a nuovi progetti, il cloud permette di avere un costo di infrastruttura molto basso. Anche questo &egrave; un concetto che funziona molto meglio nella public cloud. Quanti di questi progetti prevedete che possano realmente esistere? Se non stiamo parlando di un numero di progetti nell&rsquo;ordine delle centinaia o migliaia di nuovi progetti, il private cloud non &egrave; sicuramente la risposta migliore.</p>
+<p><b>Il vantaggio di elasticit&agrave; del cloud</b> - In una dimensione privata, l&rsquo;idea di poter disporre di una capacit&agrave; infinita &egrave; un&rsquo;illusione. E&rsquo; un&rsquo;illusione pensare di avere sempre disponibili risorse cloud aggiuntive per rispondere a nuove e impreviste domande. Il vantaggio pieno dell&rsquo;elasticit&agrave; del cloud lo si pu&ograve; apprezzare soltanto in cloud pubbliche. Se qualcuno dei vostri sviluppatori ha la brillante idea di rendere disponibili migliaia di istanze di macchine virtuali o un petabyte di storage per un progetto big data e la vostra private cloud non lo permette, che fate?<br />
+Non &egrave; vero che il private cloud pu&ograve; competere con l&rsquo;efficienza di costo che pu&ograve; essere garantita da una public cloud. Provider leader, come Amazon, Microsoft Azure, Rackspace e altri vantano enormi economie di scala e operano su margini ristrettissimi. Se riescono a raggiungere maggiore efficienza, abbassano i prezzi. Seguono una logica della guerra del prezzo per ragioni ovvie: per far s&igrave; che i piccoli player non siano competitivi e per mettere fuori gioco i competitor pi&ugrave; grandi. Non ha importanza quanto grande sia la vostra private cloud: non potr&agrave; mai competere in termini di prezzi con una public cloud.</p>
+<p><b>Il vantaggio di un approccio ibrido</b> - A questo punto l&rsquo;unico motivo per prendere in considerazione una private cloud &egrave; se operate in un mercato altamente regolamentato o con requisiti estremamente vincolanti riguardo alla protezione e alla movimentazione dei dati. Se da una parte &egrave; vero che la compliance sta diventando un aspetto sempre pi&ugrave; importante nella dimensione cloud, &egrave; altrettanto vero che la non piena soddisfazione di queste problematiche costituisce uno svantaggio temporaneo poich&eacute; il mercato sta preparandosi a far fronte a questa domanda. Una nuova classe di public cloud provider &egrave; all&rsquo;orizzonte. Si tratta di soggetti che sono indicati come Enterprise Public Cloud Provider, player che stanno mettendo insieme un&rsquo;offerta che include auditing rigoroso, SLA pi&ugrave; trasparenti e vincolanti e una migliore visibilit&agrave; per tutto ci&ograve; che riguarda gli aspetti di regolamentazione a livello di industry. E comunque, anche gli incumbent del public cloud non stanno a guardare. Se ancora non siete in grado di ottenere soluzioni di questo tipo dai big player, potete essere certi che non ci vorr&agrave; molto prima che si arrivi a formulare un&rsquo;offerta adeguata. Se investite nel private cloud per ragioni di compliance, &egrave; facile che in futuro ve ne possiate pentire. Vi accorgerete che, con un po&rsquo; di attesa, avreste potuto approfittare di un&rsquo;offerta pubblica alternativa e non, invece, dovere fare i conti con una cloud privata che nel tempo si &egrave; rivelata una fonte inesauribile di spesa. <br />
+Quindi, esistono motivi per costruire una private cloud? Forse ve ne sono all&rsquo;interno delle aziende pi&ugrave; grandi e, nello specifico, in quelle organizzazioni che possono immaginare che la cloud possa essere sfruttata da tutte le loro divisioni. Se la vostra azienda &egrave; grande abbastanza da poter raggiungere economie di scala comparabili a quelle dei public provider, allora, ma solo allora, potrete valutare seriamente l&rsquo;opzione privata. In questi casi, queste grandi cloud private diventano delle community cloud, poich&eacute; molteplici divisioni condividono un provider interno che opera in un modo molto simile a un public cloud. Questo modello pu&ograve; avere senso, per esempio pensando agli Stati Uniti, in ambito federale, poich&eacute; in questo caso si potrebbero raggiungere gli stessi livelli di efficienza di una public cloud, mantenendo i benefici di controllo a supporto di molteplici agenzie governative. Tuttavia le virtual private cloud (VPC) possono offrire alle organizzazioni il meglio dei due mondi, poich&eacute; associano la logica del public cloud facendo leva su un private network. Molte cloud ibride seguono l&rsquo;approccio VPC in quanto basate su modelli ibridi on premise/cloud che fanno tipicamente affidamento su reti private. ZapThink prevede che l&rsquo;approccio ibrido VPC diventer&agrave; il modello di sviluppo prevalente nella dimensione enterprise. <br />
+</p>
+    <hr>
+	<p><a name="seminario" id="seminario">Seminario in evidenza:</a></p>
+	<h1><a name="seminario" id="seminario">Come allineare i sistemi IT con le strategie di Business?</a></h1>
+
+	<h2>Scheda seminario</h2>
+	<span style="font-size: 18px;"><span style="font-family: Georgia,serif;">Per decenni abbiamo cercato di risolvere il problema con soluzioni &ldquo;ad hoc&rdquo;&nbsp;ottenendo risultati insoddisfacenti.</span></span></p>
+<p style="text-align: justify;">
+	<span style="font-size: 18px;"><span style="font-family: Georgia,serif;">Oggi finalmente siamo arrivati alla Business Architecture che ci permette un approccio formale, collaudato ed efficace per ottenere l&rsquo;allineamento.</span></span></p>
+<p style="text-align: justify;">
+	<span style="font-size: 18px;"><span style="font-family: Georgia,serif;">Ma&hellip;</span></span></p>
+<ul>
+	<li style="text-align: justify;">
+		<span style="color: rgb(255, 0, 0);"><span style="font-size: 18px;"><span style="font-family: Georgia,serif;">Cosa &egrave; la Business Architecture?</span></span></span></li>
+	<li style="text-align: justify;">
+		<span style="color: rgb(255, 0, 0);"><span style="font-size: 18px;"><span style="font-family: Georgia,serif;">Quali sono le diverse tecniche di allineamento?</span></span></span></li>
+	<li style="text-align: justify;">
+		<span style="color: rgb(255, 0, 0);"><span style="font-size: 18px;"><span style="font-family: Georgia,serif;">Qual &egrave; il collegamento fra Architettura, Allineamento e Performance organizzativa?</span></span></span></li>
+</ul>
+<p style="text-align: justify;">
+	<span style="font-size: 18px;"><span style="font-family: Georgia,serif;">Per trovare le risposte adeguate a questi interrogativi Vi invitiamo a partecipare al seminario</span></span></p>
+<p align="center">
+	<span style="font-size: 28px;"><span style="font-family: Georgia,serif;"><a href="http://www.technologytransfer.it/index.cfm?kLang=1&amp;cis=1;1;1&amp;rec=731"><br />
+	<strong>ALLINEARE BUSINESS e IT&nbsp;</strong><br />
+	<strong><strong>Un approccio Business Architecture</strong></strong></a></span></span></p>
+<p style="text-align: justify;">
+	<br />
+	<span style="font-size: 18px;"><span style="font-family: Georgia,serif;">Il seminario &egrave; strutturato come un mix di presentazioni, sessioni interattive di discussione ed esercizi in gruppi di lavoro.</span></span></p>
+<p style="text-align: justify;">
+	<span style="font-size: 18px;"><span style="font-family: Georgia,serif;">Il seminario si terr&agrave; a Roma il 6-8 Maggio 2013 e sar&agrave; tenuto da <span style="font-size: 22px;"><strong>Mike Rosen</strong></span>
+
+		<h2>Speaker: Mike Rosen</h2>
+	<p><img src="http://www.analisi-disegno.com/files/Jason_Bloomberg_opt.jpg" width=140 alt="Jason Bloomberg" border=0 align="right" hspace=6>He is Director of Cutter Consortium's Enterprise Architecture practice and Senior Consultant with its Business-IT Strategies practice. He has more than 20 years' technical leadership experience architecting, designing, and developing software products and applications.
+Mr. Rosen was Chief Enterprise Architect at IONA Technologies, PLC, where he was engaged in the development of the overall product architecture for IONA's next generation Web Services platform and in the creation of the reference architecture for building applications on that platform. Prior to joining IONA, Mr. Rosen was Chief Enterprise Architect at Genesis Development Corporation where he provided architecture consulting on large-scale applications and infrastructure for Global 1000 clients in insurance, finance, and telecommunications. While at Genesis, he led the development and formalization of a generic Enterprise Architecture and software development practices used throughout the company.
+Before joining Genesis, Mr. Rosen was a product architect, technical leader, and developer for numerous commercial middleware products for vendors including BEA and Digital. His involvement in product development includes Web Services, Java, CORBA, COM, Messaging, Transaction Processing, DCE, networking, and operating systems.</p>
+
+	<hr>
+	<h1><a name="elenco" id="elenco">Elenco prossimi seminari e corsi pubblici</a></h1>
+	<h2>Conferenze</h2>
+
+International Data Warehousing and Business Intelligence Summit 2013  =
+<http://www.technologytransfer.it/index.cfm?kLang=3D1&cis=3D1;1;1&rec=3D7=
+40> , Roma 23-24 Maggio
+
+<h2>Seminari</h2>
+
+<p>Agile Software Development: Esercitazioni pratiche, Principi, Agile =
+Modeling e TDD =
+<http://www.technologytransfer.it/index.cfm?kLang=3D1&cis=3D1;1;1&rec=3D7=
+30> , Roma 6-10 Maggio</p>
+<p>Allineare Business e IT: Un approccio Business Architecture =
+<http://www.technologytransfer.it/index.cfm?kLang=3D1&cis=3D1;1;1&rec=3D7=
+31> , Roma 6-8 Maggio</p>
+<p>Progettare moderne Architetture Applicative =
+<http://www.technologytransfer.it/index.cfm?kLang=3D1&cis=3D1;1;1&rec=3D7=
+33> , Roma 9-10 Maggio</p>
+<p>Agile, Lean, and Iterative Development: Management Overview =
+<http://www.technologytransfer.it/index.cfm?kLang=3D1&cis=3D1;1;1&rec=3D7=
+34>   =
+<http://cexd.emailsp.net/f/tr.aspx/?&8og7g=3Dyvw_z_&8h.=3Dqz4_hgf=3D&gij/=
+oqqkj4n85:hc&x=3Dpv&damgg0bf0&x=3Dpv&f2-np&c-8k4:9.1lQS$/-L5h0=3Dp1lQS*/5=
+-m=3Dq1r8q_gQS*6f77=3D/zuNCLM> Roma 13 Maggio</p>
+<p>Certified ScrumMaster Course PLUS =
+<http://www.technologytransfer.it/index.cfm?kLang=3D1&cis=3D1;1;1&rec=3D7=
+35> , Roma 14-16 Maggio</p>
+<p>Cloud Computing: a Manager=E2=80=99s Guide =
+<http://www.technologytransfer.it/index.cfm?kLang=3D1&cis=3D1;1;1&rec=3D7=
+36> , Roma 20 Maggio</p>
+<p>Advanced SOA: Aspetti Architetturali, di Government, di Integrazione e =
+di sinergia con il Cloud =
+<http://www.technologytransfer.it/index.cfm?kLang=3D1&cis=3D1;1;1&rec=3D7=
+37> , Roma 21-23 Maggio</p>
+<p>Designing Usable Web and Mobile Applications =
+<http://www.technologytransfer.it/index.cfm?kLang=3D1&cis=3D1;1;1&rec=3D7=
+38> , Roma 27-28 Maggio</p>
+<p>Visualizing Requirements: Tecniche collaudate di visualizzazione per =
+indirizzare Requisiti e Usabilit=C3=A0 =
+<http://www.technologytransfer.it/index.cfm?kLang=3D1&cis=3D1;1;1&rec=3D7=
+39> , Roma 29-30 Maggio</p>
+
+
+<h2>Corsi</h2>
+
+<p><a href="http://www.technologytransfer.it/index.cfm?kLang=3D1&cis=3D2;1;1&rec=3D6=
+15">Cloud Computing: tecnologie e problematiche</a>, Roma 8-10 Maggio</p>
+<p><a href=""></a>Progettazione di basi dati =
+<http://www.technologytransfer.it/index.cfm?kLang=3D1&cis=3D2;1;1&rec=3D7=
+41> , Roma 13-15 Maggio</p>
+<p>Governare l'Outsourcing di Progetto =
+<http://www.technologytransfer.it/index.cfm?kLang=3D1&cis=3D2;1;1&rec=3D6=
+18> , Roma 16-17 Maggio</p>
+<p>Portare le applicazioni Web in HTML5 =
+<http://www.technologytransfer.it/index.cfm?kLang=3D1&cis=3D2;1;1&rec=3D6=
+34> , Roma 20-22 Maggio</p>
+<p>Corso avanzato di Gestione di Progetti =
+<http://www.technologytransfer.it/index.cfm?kLang=3D1&cis=3D2;1;1&rec=3D6=
+12> , Roma 23-24 Maggio</p>
+<p>Data Warehouse: architettura e principi =
+<http://www.technologytransfer.it/index.cfm?kLang=3D1&cis=3D2;1;1&rec=3D5=
+93> , Roma 29-31 Maggio</p>
+
+Per iscrizioni multiple allo stesso corso, dal terzo iscritto in poi, si
+avrà uno sconto del 15%.
+	<hr>
+	<h1><a name="info" id="info">Informazioni pratiche</a></h1>
+	<p>Quasi tutti i nostri eventi sono a numero chiuso, Vi invitiamo pertanto a registrarVi prima possibile.</p>
+	<p>Ulteriori dettagli relativi alle iscrizioni sono <a href="http://www.technologytransfer.it/index.cfm?kLang=1&cis=7">sul nostro sito</a>.</p>
+	<p>Technology Transfer srl - Piazza Cavour - 00100 Roma</p>
+	<p>Telefono: 06-6832227</p>
+	<p>Mail: <a href="mailto:info@technologytransfer.it">info@technologytransfer.it</a></p>
+	<hr>
+	<p>Technology Transfer notizie viene spedito a chi ne fa <a href="../notiziario.html">richiesta</a>. La pubblicazione
+        non avviene con periodicit&agrave; predefinita e regolare.</p>
+	
+</font>
+</body>
+</html>

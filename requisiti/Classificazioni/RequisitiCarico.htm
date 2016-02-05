@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
+    "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Requisiti sui carichi - di capacit&agrave; - analisi-disegno.com</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="keywords" content="requisiti, carico, stress, volumi, software" />
+<link rel="stylesheet" type="text/css" href="../../analisi-disegno.css" />
+</head>
+
+<body>
+
+<p class="iniziale">analisi-disegno.com</p>
+	<p class="menu"><a href="../../index.html">Homepage</a>&nbsp;| 
+	<a href="../../notiziario.html">Notiziario</a>&nbsp;| <a href="../../welcome_e.html">In English</a></p>
+    <hr />
+	
+      <h1>Requisiti 
+        sui carichi (o di capacit&agrave;)</h1>
+		
+      <h2>Contenuto:</h2>
+      <p>Requisiti sui volumi e sui picchi che il sistema deve trattare, ed in merito al consumo 
+        di risorse limitate.</p>
+
+      <h2>Domande:</h2>
+      <ul><li>Quante transazioni 
+        al secondo deve gestire il sistema?</li>
+      <li>Quanti [oggetti 
+        significativi del dominio] devono essere gestiti dal sistema entro una 
+        [unit&agrave; di misura temporale]?</li>
+      <li>Il sistema deve 
+        gestire dei picchi? Quanto durano i periodi di picco?</li>
+      <li>Esiste un numero 
+        minimo di utenti simultanei da gestire in ogni momento, per fornire un 
+        livello di servizio accettabile?</li>
+      <li>Cosa succede dopo 
+        che &egrave; stato raggiunto il livello massimo di capacit&agrave;? Il 
+        sistema deve rifiutare l'utente successivo, ridurre il livello di servizio, 
+        o cosa altro deve fare?</li>
+      <li>Esistono limiti 
+        di memoria o di banda da tenere in considerazione?</li>
+      <li>Quali condizioni 
+        o eventi possono provocare un degrado del livello di servizio?</li></ul>
+       
+      <h2>Esempi:</h2>
+	  <ul><li>Il sistema deve gestire fino a venti utenti simultanei che eseguano qualunque
+attività senza che il livello di servizio scenda al di sotto della soglia specificata nella
+Sezione XYZ. Altri sistemi possono effettuare nei confronti di questo sistema delle
+richieste semplici entro un limite di 50 ogni ora e richieste complesse entro un limite di 1
+ogni ora, anche in questo caso senza riduzioni del livello di servizio. [Davis]</li>
+ <li>Il prodotto deve permettere 300 utenti simultanei nel periodo che va dalle 9:00
+alle 11:00. Il carico massimo negli altri periodi sarà di 150 utenti simultanei. [Robertson]</li>
+ <li>Il sistema deve avere un utilizzo massimo della CPU al 50%. [Software Engineering Institute]</li>
+ <li>Il dieci percento della capacità disponibile del processore ed il 15 percento
+della memoria di sistema disponibile devono risultare disponibili nelle situazioni di picco di
+carico pianificate. [Wiegers]</li></ul>
+	  
+	  <h2>Criteri e misure di controllo:</h2>
+      <ul><li>Numero di utenti o transazioni concorrenti che il sistema deve gestire.</li></ul>
+
+      <hr />
+      <p><a href="../ClassificazioneRequisiti.htm">Schema complessivo
+        di classificazione dei requisiti</a>.</p>
+      <p>Guida <a href="../Requirements-By-Example-ita.htm">Requisiti-by-Example</a>, scaricabile in pdf.</p>		
+      <p>Pagina principale sui <a href="../requisiti.htm">requisiti</a></p>
+
+	<hr />
+	<p class="centered"><a href="../../index.html"> analisi-disegno.com </a>, servizi e materiali per lo sviluppo dei sistemi software, a cura di <a href="../../a_comai/adriano_comai.htm">Adriano 
+  		Comai</a>. </p>  
+</body>
+</html>

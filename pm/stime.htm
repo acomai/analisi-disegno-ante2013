@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
+    "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Stime progetti software - analisi-disegno.com</title>
+<meta name="keywords" content="progetto, project management, stima, punti funzione, function point, software, metodologia" />
+<meta name="description" content="Concetti di base sulle tecniche di stima dei progetti software." />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="author" content="Adriano Comai" />
+<meta name="robots" content="noarchive" />
+<link rel="stylesheet" type="text/css" href="../analisi-disegno.css" />
+</head>
+
+<body>
+<p class="iniziale">analisi-disegno.com</p>
+	<p class="menu"><a href="../">Homepage</a>&nbsp;| 
+	<a href="../notiziario.html">Notiziario</a>&nbsp;| <a href="../welcome_e.html">In English</a></p>
+    <hr />
+	
+      <h1>Stime dei progetti software</h1>
+      <p>Le stime sono valutazioni, non obiettivi da raggiungere:</p>
+        <blockquote><p>"Determinazione di un valore ignoto mediante 
+          una valutazione soggettiva e approssimativa: stima a occhio della 
+          distanza, fare una stima del tempo necessario." (Dizionario italiano De 
+          Mauro, Paravia, 2006)</p></blockquote>
+      <p>Le stime, per definizione, possono essere imprecise, e devono poter essere modificate 
+        man mano che si acquisiscono nuovi elementi di conoscenza sul lavoro da fare.</p>
+      <p>Nel mondo dello sviluppo software, in particolare, &egrave; diffusa la consapevolezza 
+        dei limiti delle attivit&agrave; di stima. Le stime iniziali di un progetto di sviluppo
+        sono poco attendibili, perch&eacute; ogni progetto richiede un'acquisizione 
+        di conoscenza non disponibile in precedenza. Il livello di precisione 
+        (affidabilit&agrave;) delle stime aumenta man mano che il progetto avanza.</p>
+      <blockquote><p>&#147;Gli sviluppatori esperti sanno che tutti i loro sforzi per stimare 
+        l&#146;impegno necessario risultano comunque inadeguati, rispetto a ci&ograve; 
+        che il progetto richieder&agrave; effettivamente.&#148; (Philip Armour 
+        - <a href="http://www.amazon.com/exec/obidos/ASIN/0849314895/analisidisegnoco" target="_blank">The 
+        Laws of Software Process</a>).</p></blockquote>
+      <p>Vi sono comunque; alcuni approcci utili per ridurre il rischio associato alle stime:</p>
+      <p><a href="#Tecniche">Tecniche ed unit&agrave; di misura dimensionali</a>.</p>
+      <p><a href="#Misure">Misurazioni di produttivit&agrave; e qualit&agrave;</a>.</p>
+      <p><a href="#Collettivi">Metodi di stima collettivi</a>.</p>
+      <p><a href="#Complessivi">Modelli di stima dei costi</a>.</p>
+      <p><a href="#Strumenti">Strumenti di supporto alle stime</a>.</p>
+      <hr />
+
+      <h2>Tecniche ed unit&agrave; di misura dimensionali<a name="Tecniche"></a></h2>
+      <p>Servono a stimare la quantit&agrave;, la dimensione delle &quot;cose da fare&quot;.</p>
+      <p>Le unit&agrave; di misura dimensionale 
+        utilizzate storicamente nel software, come linee di codice e numero programmi, 
+        si sono rivelate poco adeguate per la stima dell'impegno necessario nei 
+        progetti, stima che per motivi contrattuali deve essere effettuata gi&agrave; 
+        all'inizio dei lavori.</p>
+      <p>Si &egrave; quindi cercato 
+        di sostituirle con unit&agrave; di misura pi&ugrave; adatte a stime precoci. 
+        La pi&ugrave; diffusa &egrave; il punto funzione (function point), ideata 
+        da Allan Albrecht (IBM) nel 1979. I function point:</p>
+      <ul>
+        <li>sono indipendenti dalle tecnologie e dai linguaggi di programmazione utilizzati</li>
+        <li>misurano la dimensione funzionale percepibile dall'utente</li>
+        <li>sono utilizzabili anche nelle fasi iniziali dei progetti</li>
+        <li>vengono misurati secondo regole standardizzate (manuale di conteggio internazionale).</li>
+      </ul>
+      <p>L'<a href="http://www.ifpug.org" target="_blank">IFPUG</a> 
+        &egrave; l'istituzione che definisce gli standard di utilizzo dei 
+        FP e gestisce la certificazione degli stimatori. Il <a href="http://www.gufpi-isma.org" target="_blank">GUFPI</a> 
+        &egrave; la sezione italiana dell'IFPUG.</p>
+      <p>Oltre ai function point - la 
+        pi&ugrave; standardizzata e utilizzata - esistono numerose altre unit&agrave; 
+        di misura dimensionale, e tecniche di misurazione ad esse collegate. Tra 
+        le pi&ugrave; recenti, gli <a href="http://www.stsc.hill.af.mil/crosstalk/2006/02/0602Clemmons.pdf" target="_blank">Use 
+        Case Point</a> e gli <a href="http://www.mountaingoatsoftware.com/system/presentation/file/3/Agile2006_AEP.pdf" target="_blank">Story 
+        Point</a>.</p>
+
+      <hr />
+      <h2>Misure su produttivit&agrave; e qualit&agrave;<a name="Misure"></a></h2>
+      <p>La misurazione 
+        dimensionale &egrave; solo un passo propedeutico alla stima necessaria 
+        per i progetti. Quello che &egrave; necessario stimare &egrave; l'impegno 
+        (effort) in giorni/persona - quanti giorni/mesi/anni sono necessari per 
+        fare il lavoro - ed il costo.</p>
+      <p>Le organizzazioni che sviluppano 
+        software possono tenere traccia della produttivit&agrave; dei propri progetti, 
+        e del livello di qualit&agrave; dei prodotti che rilasciano. Conoscendo 
+        la propria produttivit&agrave;, possono stimare i nuovi progetti in modo 
+        pi&ugrave; affidabile. Le organizzazioni hanno tutti i dati per farlo. 
+        Ma non sempre lo fanno:</p>
+      <blockquote><p>&quot;&Egrave; raro che siano disponibili dati storici aziendali per 
+        calibrare le stime. Le aziende che non memorizzano informazioni sull&#146;utilizzo 
+        del personale, sui tempi, sui costi e sui livelli di qualit&agrave; dei 
+        progetti sono sempre a rischio quando devono effettuare delle stime. Gli 
+        investimenti effettuati per la realizzazione di buon sistema metrico vengono 
+        abbondantemente ripagati nel corso del tempo.&quot; (Capers Jones, Software 
+        Cost Estimation in 2002, CrossTalk, June 2002)</p></blockquote>
+      <p>Quando non sono disponibili 
+        dati dell'organizzazione, &egrave; possibile fare riferimento a statistiche 
+        internazionali su produttivit&agrave; e qualit&agrave;. Le fonti pi&ugrave; 
+        utilizzate sono <a href="http://www.isbsg.org" target="_blank">ISBSG</a>, 
+        e <a href="http://www.spr.com" target="_blank">Software Productivity Research</a>.</p>
+
+      <hr />
+      <h2>Metodi di stima collettivi <a name="Collettivi"></a></h2>
+      <p>Nascono dalla consapevolezza della imperfezione connaturata alle attivit&agrave; di stima. Mettere 
+        a confronto le stime di diverse persone pu&ograve; contribuire a ridurre i rischi.</p>
+      <h2>Metodo Delphi</h2>
+      <p>Il metodo Delphi consiste in un processo di stima collettiva che avviene in modo strutturato e progressivo.</p>
+      <p>Viene formato un gruppo di stimatori. Ogni stimatore riceve le medesime informazioni di partenza 
+        sul progetto e stima l'effort, indipendentemente e in modo anonimo.</p>
+      <p>Un coordinatore raccoglie le stime, elabora dati di sintesi (medie, minimi, massimi, &#133;) e le presenta 
+        per confronto agli stimatori. Viene effettuata un'analisi congiunta, che 
+        porta tendenzialmente allo scarto dei valori estremi, e favorisce l'approfondimento 
+        dei fattori critici. Il giro di stima successivo conducegeneralmente ad una convergenza delle stime.</p>
+      <p>Per approfondire &egrave; utile un articolo di Karl Wiegers su 
+		<a href="http://www.processimpact.com/articles/delphi.html" target="_blank">Wideband Delphi</a>.</p>
+
+      <hr />
+      <h2>Modelli di stima dei costi<a name="Complessivi"></a></h2>
+      <p>Il pi&ugrave; 
+        significativo &egrave; <a href="http://sunset.usc.edu/research/COCOMOII/" target="_blank">CoCoMo</a> 
+        (Constructive Cost Model), ideato da Barry Boehm.</p>
+      <hr />
+      <h2>Strumenti di supporto alle stime<a name="Strumenti"></a></h2>
+      <blockquote><p>&quot;Confronto (1998) di 50 stime manuali con 50 stime 
+        supportate da strumenti, per progetti attorno ai 5.000 punti funzione. 
+        In entrambi i casi, stime effettuate da project manager, e confrontate 
+        con i risultati effettivi. <br />
+        Solo 4 tra le stime manuali si discostavano meno del 10% dai risultati 
+        effettivi. 17 sono risultate ottimistiche tra il 10 e il 30%, mentre 29 
+        sono risultate ottimistiche per pi&ugrave; del 30%.<br />
+        Tra le stime supportate da strumenti, 22 si discostavano meno del 10% 
+        dai risultati effettivi. 24 erano pessimistiche tra il 10 e il 25%, mentre 
+        3 oltre il 25%. Solo 1 &egrave; risultata ottimistica, del 15%. &quot; 
+        (Capers Jones, Social and Technical Reasons for Software Project Failures, 
+        CrossTalk, June 2006)</p></blockquote>
+      <p>Gli strumenti di supporto alle stime possono essere molto sofisticati e costosi, ma 
+        anche gratuiti. Sono comunque utili, perch&eacute; lo strumento indica 
+        una serie di aspetti di cui tenere conto nelle attivit&agrave; di stima, 
+        e perch&eacute; spesso contengono valori di riferimento derivati da statistiche 
+        internazionali.</p>
+      <hr />
+      <p><a href="../processo/processosvilupposw.htm">Pagina principale sui processi di sviluppo software</a></p>
+
+
+     <hr />
+	<p class="centered"><a href="../"> analisi-disegno.com </a>, servizi e materiali per lo sviluppo dei sistemi software, a cura di <a href="../a_comai/adriano_comai.htm">Adriano 
+  		Comai</a>. </p>
+</body>
+
+</html>

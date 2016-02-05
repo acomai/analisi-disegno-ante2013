@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
+    "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>UML - analisi-disegno.com</title>
+<meta name="keywords" content="UML, standard, OMG, ISO, software, metodologia" />
+<meta name="description" content="UML (Unified Modeling Language &egrave; lo standard OMG ed ISO per la rappresentazione del software." />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="robots" content="noarchive">
+<link rel="stylesheet" type="text/css" href="../analisi-disegno.css" />
+</head>
+
+<body>
+<p class="iniziale">analisi-disegno.com</p>
+	<p class="menu"><a href="../index.html">Homepage</a>&nbsp;| 
+	<a href="../notiziario.html">Notiziario</a>&nbsp;| <a href="../welcome_e.html">In English</a></p>
+    <hr />
+	
+      <h1>Unified Modeling Language (UML) <a href="umlsite.gif"><img src="umlsite.gif" border="0" alt="logo UML" width="89" height="45"></a></h1>
+      <p>&Egrave; uno standard dell'Object Management Group (<a href="http://www.omg.org" target="_blank">OMG</a>), ed uno standard (<a href="http://www.iso.org" target="_blank">ISO</a>).</p>
+      <p>Definizione ufficiale: &quot;un linguaggio per specificare, 
+        visualizzare, e realizzare i prodotti di sistemi software, e anche per 
+        il business modeling. L&#146; UML rappresenta una collezione di &quot;best 
+        engineering practices&quot; che si sono dimostrate utili nella progettazione 
+        di sistemi complessi e di grandi dimensioni.&quot;</p>
+      <p>Mia definizione minimalista: una notazione standard 
+        per rappresentare in modo visuale (grafico) le caratteristiche dei sistemi, 
+        sia a livello business che a livello software.</p>
+      <hr />
+      <p><font face="Arial, Helvetica, sans-serif"><b>Riferimenti di base</b></font></p>
+      <ul>
+        <li><font face="Arial"><font face="Arial"><a href ="#Storia">Storia (in 
+          sintesi) di UML</a></font> </font></li>
+        <li><a href="LuoghiComuniUML.html"><font face="Arial">Luoghi comuni su 
+          UML</font></a></li>
+        <li><font face="Arial"><a href="usareUML.htm">Usare UML</a></font></li>
+        <li><a href="StrumentiUML.htm"><font face="Arial"><u>Strumenti basati 
+          su UML</u></font></a></li>
+        <li><a href="uml_biblio.htm"><font face="Arial">Bibliografia UML</font></a></li>
+      </ul>
+      <p><font face="Arial"><b>Introduzioni e linee guida</b></font></p>
+      <ul>
+        <li><a href="introuml.pdf"><font face="Arial"><font face="Arial, Helvetica, sans-serif">Introduzione 
+          a UML</font></font></a></li>
+        <li><font face="Arial, Helvetica, sans-serif"><a href="businessmodeling/BusinessModelingUML.pdf">Introduzione 
+          al </a></font><a href="../businessmodeling/BusinessModelingUML.pdf"><font face="Arial, Helvetica, sans-serif"> 
+          business modeling UML</font></a></li>
+        <li><a href="../usecases/introuc.pdf"><font face="Arial, Helvetica, sans-serif">Introduzione 
+          ai casi d'uso</font></a></li>
+        <li><font face="Arial, Helvetica, sans-serif">Linee guida: <a href="../StrumentiOperativi.htm">modelli 
+          architetturali e casi d'uso</a></font></li>
+      </ul>
+      <p><font face="Arial, Helvetica, sans-serif"><b>Articoli</b></font></p>
+      <ul>
+        <li><font face="Arial"><a href="../a_comai/articoli/art01_96_11.htm"><u>&quot;Unified 
+          Modeling Language: un linguaggio universale per la progettazione del 
+          software&quot;</u></a><b> </b>(su ZeroUno, novembre 1996)</font></li>
+        <li><font face="Arial">&quot;<a href="IntervistaBooch.html">Intervista 
+          a Grady Booch</a>&quot; (su ZeroUno, aprile 1999)</font></li>
+        <li><font face="Arial"><a href="IntervistaJacobson.html">&quot;Intervista 
+          a Ivar Jacobson</a>&quot; (su ZeroUno, ottobre 1999)</font></li>
+        <li><font face="Arial"> &quot;<a href="../a_comai/articoli/2000-11-StrumentiUML.htm">Strumenti 
+          UML: criteri di scelta e di utilizzo</a>&quot; (su ZeroUno, novembre 
+          2000)</font></li>
+        <li><font face="Arial">&quot;<a href="../a_comai/articoli/2005-05-UML2.htm">E' 
+          arrivato UML 2</a>&quot; (su ZeroUno, maggio 2005)</font></li>
+      </ul>
+      <p><font face="Arial, Helvetica, sans-serif"><b>Mailing list </b></font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif"><a href="../UML_Italia.html">UML-Italia</a>. 
+          Forum su UML e sui processi di sviluppo (in italiano)</font></li>
+        <li><a href="http://groups.yahoo.com/" target="_blank"><font face="Arial, Helvetica, sans-serif">UML-Forum</font></a><font face="Arial, Helvetica, sans-serif"> 
+          (in inglese).</font></li>
+      </ul>
+      <hr>
+      <p><b><font face="Arial, Helvetica, sans-serif">Storia (in sintesi) di UML<a name="Storia"></a></font></b></p>
+      <p><font face="Arial">Il processo di standardizzazione ed unificazione metodologica 
+        che ha portato ad UML ha avuto origine nel 1994 con l'ingresso di Jim 
+        Rumbaugh nella societ� Rational, in cui operava Grady Booch, ed � proseguito 
+        con l'arrivo nella stessa societ�, a fine 1995, di Ivar Jacobson. </font></p>
+      <ul>
+        <li> <font face="Arial">ottobre 1995: </font><font face="Arial">Unified 
+          Method versione 0.8 (Booch e Rumbaugh)</font></li>
+        <li> <font face="Arial">giugno 1996: Unified Modeling Language (UML) versione 
+          0.9 (Booch, Rumbaugh, Jacobson)</font></li>
+        <li> <font face="Arial">ottobre 1996: UML 0.91 (Booch, Rumbaugh, Jacobson)</font></li>
+        <li> <font face="Arial">gennaio 1997: UML 1.0 (Booch, Rumbaugh, Jacobson 
+          e partner UML, tra cui Microsoft, Oracle, Hewlett-Packard, Digital, 
+          Texas Instruments), in risposta alla richiesta avanzata dall' OMG (Object 
+          Management Group) per un framework di interoperabilit� tra strumenti 
+          di analisi e disegno. All'OMG arrivano anche altre proposte, tra cui 
+          quelle firmate da IBM e Platinum</font></li>
+        <li> <font face="Arial">settembre 1997 1997: Dopo accordi con Platinum, 
+          IBM e le altre &quot;cordate&quot;,&nbsp; la versione 1.1 dello Unified 
+          Modeling Language viene sottoposta all'approvazione di OMG. E' una proposta 
+          congiunta di Rational Software, Microsoft, Hewlett-Packard, Oracle, 
+          Sterling Software, MCI Systemhouse, Unisys, ICON Computing, IntelliCorp, 
+          i-Logix, IBM, ObjecTime, Platinum Technology, Ptech, Taskon, Reich Technologies, 
+          Softeam, e altri.</font></li>
+        <li><font face="Arial">16 novembre 1997: UML 1.1 diventa ufficialmente 
+          uno standard OMG (con il nome ufficiale di &quot;UML OMG 1.0&quot;)</font></li>
+        <li><font face="Arial">dicembre 1998: UML 1.2 - revisione editoriale, 
+          correzione di errori tipografici e grammaticali</font></li>
+        <li><font face="Arial">giugno 1999: UML 1.3 - variazioni minori ai diagrammi 
+          delle classi, dei casi d'uso, di interazione; specifica degli aspetti 
+          semantici e notazionali per modelli e sottosistemi.</font></li>
+        <li><font face="Arial">maggio 2001 : UML 1.4 - variazioni minori</font></li>
+        <li><font face="Arial">marzo 2003: UML 1.5 - vengono inglobate le &quot;Action 
+          Semantics&quot;</font></li>
+        <li><font face="Arial">giugno 2003: UML 2.0 approvata in bozza - molte 
+          variazioni significative, completa ristrutturazione del metamodello</font></li>
+        <li><font face="Arial">marzo 2005: UML 2.0 diventa la versione ufficiale</font></li>
+        <li><font face="Arial">aprile 2006: UML 2.1 - variazioni minori</font></li>
+      </ul>
+      <p><font face="Arial">I documenti ufficiali di UML si trovano presso il 
+        sito <a href="http://www.omg.org/" target="_blank"><font color="#0000ff"><u>OMG</u></font></a>.&nbsp;</font></p>
+      <hr>
+      <p><font face="Arial, Helvetica, sans-serif">Servizi di consulenza sulla 
+        modellazione UML: supporto alla modellazione, , supporto alla scelta di 
+        strumenti di modellazione</font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif">supporto alla modellazione 
+          nei progetti</font></li>
+        <li><font face="Arial, Helvetica, sans-serif">verifiche su modelli esistenti</font></li>
+        <li><font face="Arial, Helvetica, sans-serif">supporto alla scelta di 
+          strumenti di modellazione</font></li>
+      </ul>
+      <p><font face="Arial, Helvetica, sans-serif">Formazione:</font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif">Corso: </font><font face="Arial"><a href="../a_comai/corsi/sk_uml.htm">Sviluppo 
+          di applicazioni con UML</a> </font></li>
+        <li><font face="Arial"><a href="../a_comai/corsi/sk_umlwk.html">Workshop 
+          di modellazione UML</a> </font></li>
+      </ul>
+      <p>&nbsp;</p>
+    </td>
+  </tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+    <td> <!-- #BeginLibraryItem "/Library/Bottom.lbi" --><hr>
+<p align="center"><font face="Arial"><a href="../welcome.html">analisi-disegno.com</a>, 
+  servizi e materiali per lo sviluppo dei sistemi software, a cura di <a href="../a_comai/adriano_comai.htm">Adriano 
+  Comai</a>. </font></p>
+<!-- #EndLibraryItem --><font face="Arial"></font></td>
+  </tr><!--msnavigation--></table></body>
+</html>

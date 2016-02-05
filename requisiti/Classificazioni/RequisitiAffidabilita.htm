@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
+    "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Requisiti di affidabilit&agrave; - analisi-disegno.com</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="keywords" content="requisiti, affidabilità, software" />
+<link rel="stylesheet" type="text/css" href="../../analisi-disegno.css" />
+</head>
+
+<body>
+
+<p class="iniziale">analisi-disegno.com</p>
+	<p class="menu"><a href="../../index.html">Homepage</a>&nbsp;| 
+	<a href="../../notiziario.html">Notiziario</a>&nbsp;| <a href="../../welcome_e.html">In English</a></p>
+    <hr />
+
+      <h1>Requisiti 
+        di affidabilit&agrave;</h1> 
+        <h2>Contenuto:</h2>
+      <p>Requisiti sull'affidabilit&agrave; 
+        del sistema, cio&egrave; sulla probabilit&agrave; che il sistema funzioni 
+        senza interruzioni per un determinato periodo di tempo.</p>
+      <p>L'elenco che segue 
+        (di Alan Davis) pu&ograve; venire usato per verificare l'importanza della 
+        categoria di affidabilit&agrave; per il sistema. Cosa pu&ograve; accadere 
+        in caso di malfunzionamento?</p>
+      <ul>
+        <li>distruzione completa del genere umano</li>
+        <li>eliminazione di un numero elevato di esseri umani</li>
+        <li>eliminazione di alcuni esseri umani</li>
+        <li>ferimento di esseri umani</li>
+        <li>perdite finanziarie molto rilevanti</li>
+        <li>scandalo, imbarazzo rilevante</li>
+        <li>perdite finanziarie limitate</li>
+        <li>fastidio limitato</li>
+      </ul>
+
+        <h2>Domande:</h2>
+      <ul><li>Qual &egrave; 
+        il livello di affidabilit&agrave; necessario per questo sistema?</li>
+      <li>Per quali servizi 
+        non &egrave; ammissibile una interruzione (es. autenticazione)?</li>
+      <li>Quale livello 
+        di MTBF (Mean time between failures &#150; tempo medio tra interruzioni) 
+        &egrave; appropriato per questo sistema?</li>
+      <li>Qual &egrave; 
+        il livello di interruzioni totale che si pu&ograve; accettare?</li>
+      <li>Quale livello 
+        di MTTR (Mean time to repair &#150; tempo medio per il ritorno alla operativit&agrave;) 
+        &egrave; accettabile?</li>
+      <li>Il sistema deve 
+        continuare a funzionare in caso avvengano eventi anomali?</li></ul>
+		
+	  <h2>Esempi:</h2>
+	  <ul><li>Durante i test di integrazione e di sistema non devono essere riscontrati più di
+cinque errori ogni 10.000 linee di codice eseguibile. [Davis]</li> 
+<li>Il sistema deve avere un tempo medio tra interruzioni non inferiore ai 6 mesi. [Davis]</li> 
+<li>Il 90 percento di tutte le interruzioni del sistema devono essere riparabili entro 5
+minuti, ed il 99,9 percento di tutte le interruzioni deve essere riparabile entro un'ora. [Leffingwell-Widrig]</li> 
+<li>Il prodotto deve essere funzionante per il 99 percento del tempo totale. [Robertson]</li> 
+<li>Il prodotto deve fornire 10 minuti di operatività in emergenza nel caso venga
+scollegato dalla corrente elettrica. [Robertson]</li> 
+<li>Non devono andare perduti più di cinque risultati sperimentali ogni 1.000, a
+causa di interruzioni software. [Wiegers]</li>
+<li>Se l'editor si blocca prima che l'utente abbia salvato il file, l'editor deve essere
+in grado di ripristinare, nell'occasione successiva in cui lo stesso utente avvia il
+programma, tutte le modifiche effettuate sul file fino ad un minuto prima dell'interruzione. [Wiegers]</li>
+</ul> 
+
+      <h2>Criteri e misure di controllo:</h2>
+      <ul><li>MTBF (Mean time 
+        between failures &#150; tempo medio tra interruzioni) &#150; pu&ograve; 
+        essere specificato in minuti, ore, giorni, mesi, anni o analoghe unit&agrave; 
+        di misura temporale.</li>
+      <li>MTTR (Mean time 
+        to repair &#150; tempo medio per il ritorno alla operativit&agrave;) &#150; 
+        pu&ograve; essere precisato in termini di range.</li>
+      <li>Massimo numero 
+        di errori o difetti &#150; pu&ograve; essere specificato in termini di 
+        difetti / linee di codice, o difetti / function point.</li>
+      <li>Tempo di ripartenza 
+        dopo un'interruzione di sistema.</li></ul>
+
+      <hr />
+      <p><a href="../ClassificazioneRequisiti.htm">Schema complessivo
+        di classificazione dei requisiti</a>.</p>
+      <p>Guida <a href="../Requirements-By-Example-ita.htm">Requisiti-by-Example</a>, scaricabile in pdf.</p>		
+      <p>Pagina principale sui <a href="../requisiti.htm">requisiti</a></p>
+
+	<hr />
+	<p class="centered"><a href="../../index.html"> analisi-disegno.com </a>, servizi e materiali per lo sviluppo dei sistemi software, a cura di <a href="../../a_comai/adriano_comai.htm">Adriano 
+  		Comai</a>. </p>  
+</body>
+</html>

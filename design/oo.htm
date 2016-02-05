@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
+    "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>L'approccio Object Oriented - analisi-disegno.com</title>
+<meta name="keywords" content="object oriented, orientamento oggetti, software, design, progettazione" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<link rel="stylesheet" type="text/css" href="../analisi-disegno.css" />
+</head>
+
+<body>
+<p class="iniziale">analisi-disegno.com</p>
+	<p class="menu"><a href="../">Homepage</a>&nbsp;| <a href="../welcome_e.html">In English</a></p>
+    <hr />
+	
+      <h1>L'approccio Object Oriented </h1>
+
+      <p>L'approccio di design che sta 
+        alla base delle architetture attuali &egrave; object oriented. Ci&ograve; 
+        non significa che tutti i componenti debbano essere costruiti con linguaggi 
+        object oriented (altrimenti non sarebbe possibile riutilizzare, come componenti, 
+        programmi e transazioni legacy), ma che i pr&igrave;ncipi generali della progettazione 
+        di applicazioni a componenti sono basati sull'orientamento agli oggetti.</p>
+      <p>Ma perch&eacute; le architetture a 
+        componenti sono basate su pr&igrave;ncipi di progettazione object oriented?</p>
+      <h2>Una diversa (e migliore) organizzazione del software.</h2>
+      <p>L'attenzione e la progressiva 
+        diffusione dell'approccio object oriented sono legate al passaggio (avvenuto, 
+        all'incirca, nel decennio 1980-1990) dalle precedenti architetture monopiattaforma 
+        alle architetture distribuite, multipiattaforma. Questo cambiamento architetturale 
+        si &egrave; portato dietro alcune questioni concrete da risolvere: come distribuire 
+        i dati e le funzioni, che costituivano le vecchie applicazioni monolitiche, 
+        su una pluralit&agrave; di processori cooperanti? Secondo quale logica? Come 
+        far colloquiare tra loro i diversi "pezzi applicativi"?</p>
+      <p>L'object oriented ha fornito 
+        a queste domande delle risposte innovative ed adeguate dal punto di vista 
+        tecnico, e soprattutto dal punto di vista dell'organizzazione del software.</p>
+      <p>Un'applicazione ad oggetti 
+        &egrave; costituita da un insieme di moduli software logicamente indipendenti, 
+        le classi, che incapsulano dati ed operazioni sui dati (risolvendo la 
+        distinzione tradizionale tra dati e funzioni), e che interagiscono tra 
+        loro tramite scambi di messaggi.</p>
+      <p>Rispetto ai moduli software 
+        tradizionali, le classi presentano alcuni vantaggi decisivi, sotto il 
+        profilo tecnico-organizzativo.</p>
+      
+        <h2>Elevata coesione interna, coupling limitato verso l'esterno.</h2> 
+		  <p>Ogni classe &egrave; un componente estremamente 
+          coeso, che gestisce un insieme di dati omogenei e le operazioni che 
+          accedono a tali dati , e se necessario li modificano. Vantaggi:</p> 
+          <ul>
+            <li>manutenibilit&agrave; - le 
+              modifiche sui dati sono normalmente limitate all'ambito omogeneo 
+              della classe che li definisce, poich&eacute; i dati sono accessibili solo 
+              alle operazioni interne alle classi</li>
+            <li>riusabilit&agrave; - la classe 
+              fornisce tutte le operazioni significative per l'oggetto business, 
+              utilizzabili in contesti eterogenei</li>
+            <li>distribuibilit&agrave; - la 
+              classe &egrave; un elemento ideale per la distribuibilit&agrave;, grazie alla 
+              sua coesione ed al sufficiente disaccoppiamento rispetto ad altre 
+              classi; nei casi in cui sia opportuno un livello di accorpamento 
+              maggiore, pi&ugrave; classi accoppiate tra loro possono essere ricomprese 
+              in un unico componente distribuibile.</li>
+          </ul>
+
+        <h2>Separazione rigorosa di interfaccia ed implementazione.</h2> 
+		  <p>Le richieste (messaggi) indirizzabili 
+          ad una classe sono definite esplicitamente (nome messaggio, parametri 
+          di input e di output): l'interfaccia della classe &egrave; costituita, precisamente, 
+          dall'insieme dei messaggi che un qualsiasi chiamante (client) pu&ograve; indirizzarle. 
+          L'implementazione della classe &egrave; invece inaccessibile ai client. Vantaggi:</p> 
+          <ul>
+            <li>manutenibilit&agrave; - ogni 
+              variazione all'implementazione di una classe non ha impatto sui 
+              client, se non si verificano variazioni a livello dell'interfaccia; 
+              &egrave; possibile sostituire completamente l'implementazione mantenendo 
+              la medesima interfaccia, senza impatti sui client.</li>
+            <li>distribuibilit&agrave; - le 
+              comunicazioni tra le classi avvengono esclusivamente tramite messaggi, 
+              indirizzabili sia in locale che in remoto.</li>
+          </ul>
+
+        <h2>Polimorfismo.</h2> 
+		<p>Classi diverse possono rispondere al medesimo messaggio, ciascuna in modo appropriato. 
+          Il client non ha necessit&agrave; di conoscere la classe precisa a cui appartiene 
+          l'oggetto su cui sta lavorando, ma pu&ograve; inviare un messaggio generico 
+          la cui risposta dipender&agrave; dalla classe a cui l'oggetto appartiene. Vantaggi:</p> 
+           
+          <ul>
+            <li>riduzione della complessit&agrave; 
+              - la logica del client risulta semplificata, in quanto viene eliminata 
+              gran parte della logica condizionale legata al trattamento di oggetti 
+              di tipologia diversa</li>
+            <li>manutenibilit&agrave; - le 
+              modifiche ai comportamenti specifici, i quali implementano nelle 
+              diverse classi il modo specifico di rispondere ad un messaggio generico, 
+              sono localizzate nell'ambito delle singole classi, e non devono 
+              essere conosciute dai client.</li>
+          </ul>
+        <h2>Ereditariet&agrave;.</h2> 
+		<p>&Egrave; possibile specializzare una classe esistente, ereditandone attributi 
+          e comportamenti nella nuova classe, ed aggiungendo solo attributi ed 
+          operazioni specifici per la nuova tipologia da gestire. Vantaggi:</p> 
+          <ul>
+            <li>riusabilit&agrave; - l'ereditariet&agrave; 
+              consente di distinguere in modo rigoroso gli aspetti comuni a pi&ugrave; 
+              tipologie di oggetti da quelli specifici ad una tipologia particolare, 
+              riducendo il carico di programmazione e al tempo stesso garantendo 
+              una migliore organizzazione del codice.</li>
+            <li>manutenibilit&agrave; - le 
+              modifiche ad attributi ed operazioni comuni a pi&ugrave; sottoclassi vengono 
+              localizzati al livello della sola superclasse, con una riduzione 
+              del carico di manutenzione.</li>
+          </ul>
+
+      <p>Queste caratteristiche dell'approccio 
+        object oriented hanno favorito la progressiva 
+        diffusione dei linguaggi OO in tutti i domini applicativi e nelle realt&agrave; 
+        che richiedono volumi di dati e processi elevati.</p>
+      <p>In particolare, l'approccio 
+        OO &agrave; indicato in tutte le situazioni applicative in cui si manifestino 
+        esigenze di:</p>
+      <ul>
+        <li>performance elevate (es. real-time)</li>
+        <li>architetture distribuite (es. client-server, web)</li>
+        <li>scalabilit&agrave; delle applicazioni</li>
+        <li>rilascio in tempi rapidi di nuovi prodotti e servizi</li>
+        <li>elevata produttivit&agrave; dello sviluppo e della manutenzione</li>
+        <li>riusabilit&agrave;</li>
+        <li>incapsulamento di componenti legacy</li>
+      </ul>
+      <p>Alcuni tra i vantaggi dell'approccio 
+        object oriented, comunque, possono essere conseguiti anche adottando tale 
+        approccio solo a livello di analisi e design, senza necessariamente ricorrere 
+        a linguaggi OO per la programmazione.</p>
+      <p>In particolare, analisi e design 
+        OO comportano comunque una migliore organizzazione dell'applicazione, 
+        in quanto le classi costituiscono elementi coesi al loro interno e tra 
+        loro disaccoppiati. Ci&ograve; garantisce una migliore manutenibilit&agrave;, riusabilit&agrave; 
+        e distribuibilit&agrave;.</p>
+
+      <hr />
+      <p><a href="oo_biblio.htm">Bibliografia object oriented</a>.</p>
+
+     <hr />
+	<p class="centered"><a href="../"> analisi-disegno.com </a>, servizi e materiali per lo sviluppo dei sistemi software, a cura di <a href="../a_comai/adriano_comai.htm">Adriano 
+  		Comai</a>. </p>
+</body>
+
+</html>
+		

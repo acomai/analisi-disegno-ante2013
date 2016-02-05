@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
+    "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Processo di sviluppo software incrementale - analisi-disegno.com</title>
+<meta name="keywords" content="processo, incrementale, metodo, metodologia, sviluppo, software" />
+<meta name="description" content="Il processo di sviluppo software incrementale: caratteristiche e applicazione." />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="author" content="Adriano Comai" />
+<meta name="robots" content="noarchive" />
+<link rel="stylesheet" type="text/css" href="../analisi-disegno.css" />
+</head>
+
+<body>
+<p class="iniziale">analisi-disegno.com</p>
+	<p class="menu"><a href="../">Homepage</a>&nbsp;| 
+	<a href="../notiziario.html">Notiziario</a>&nbsp;| <a href="../welcome_e.html">In English</a></p>
+    <hr />
+	
+      <h1>Processo di sviluppo software incrementale</h1>
+      <p>Non &egrave; certo chi sia stato il vero ideatore, ma una delle prime presentazioni &egrave; quella 
+        di Barry Boehm, nel 1981 (&quot;Software Engineering Economics&quot;, editore Prentice Hall).</p>
+      <p>La figura riportata sotto (un 
+        activity diagram <a href="../uml/uml.htm">UML</a>) non rappresenta la versione originale del processo, 
+        ma una delle sue derivazioni pi&ugrave; diffuse.</p>
+      <p><img src="incrementale.jpg" alt="esempio processo incrementale" width="516" height="435" /></p>
+      <p>&Egrave; una derivazione del processo di sviluppo <a href="waterfall.htm">a cascata</a> (Waterfall).</p>
+      <p>Completata la fase di analisi, 
+        viene effettuata una attivit&agrave; di design dell'architettura del sistema. 
+        Vengono, cio&egrave;, effettuate le scelte &quot;di alto livello&quot; 
+        relative alla strutturazione del sistema in (macro)parti distinte (sottosistemi), 
+        definite le responsabilit&agrave; di ciascun sottosistema, le modalit&agrave; 
+        di dialogo (interfacce) tra i diversi sottosistemi.</p>
+      <p>A questo punto vengono definite le priorit&agrave; di realizzazione, sulla base di due aspetti:</p>
+      <ul>
+        <li>priorit&agrave; di natura funzionale (relativa alle esigenze dei committenti e delle parti interessate)</li>
+        <li>priorit&agrave; di natura architetturale (se un sottosistema A necessita del sottosistema B per 
+          funzionare, B ha una priorit&agrave; superiore)</li>
+      </ul>
+      <p>Sulla base delle priorit&agrave; definite, il progetto viene articolato in una serie di sottoprogetti realizzativi, 
+        ciascuno dei quali produrr&agrave; uno o pi&ugrave; sottosistemi (parti del sistema complessivo).</p>
+      <p>I sottoprogetti realizzativi 
+        potranno essere condotti in sequenza rigida (uno dopo l'altro), oppure 
+        essere condotti parzialmente in parallelo (con sovrapposizioni temporali).</p>
+
+      <h2>Vantaggi</h2>
+      <p>Rispetto al processo a cascata, 
+        permette di arrivare a consegnare qualcosa di concreto prima di aver completato 
+        l'intero sistema. In questo modo si ottengono feedback (riscontri) concreti, 
+        con indicazioni utilizzabili anche nei sottoprogetti realizzativi ancora 
+        in corso o successivi. E si riducono i rischi di insuccesso.</p>
+      <p>L'articolazione del piano di 
+        progetto &egrave; pi&ugrave; complessa, rispetto al processo di sviluppo 
+        a cascata, ma permette una maggiore flessibilit&agrave; nell'assegnazione 
+        delle persone ai compiti progettuali, quando i sottoprogetti vengono pianificati 
+        con una parziale sovrapposizione temporale.</p>
+      <h2>Svantaggi</h2>
+      <p>Condivide con il processo a cascata due assunzioni erronee:</p>
+      <ul>
+        <li>che sia possibile definire 
+          tutti i <a href="../requisiti/requisiti.htm">requisiti</a> alla partenza del progetto, senza entrare con i committenti 
+          e le altre parti interessate nel merito delle soluzioni concrete</li>
+        <li>che i requisiti non cambino dopo che sono stati concordati</li>
+      </ul>
+      <hr /> 
+        <p><a href="processosvilupposw.htm">Pagina principale sui processi di sviluppo software</a></p>
+
+     <hr />
+	<p class="centered"><a href="../"> analisi-disegno.com </a>, servizi e materiali per lo sviluppo dei sistemi software, a cura di <a href="../a_comai/adriano_comai.htm">Adriano 
+  		Comai</a>. </p>
+</body>
+
+</html>

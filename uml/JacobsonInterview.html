@@ -1,0 +1,385 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 4.0">
+
+<title>analisi-disegno.com - Interview with Ivar Jacobson: June 23rd, 1999</title>
+<meta name="Microsoft Border" content="tb, default">
+</head>
+
+<body bgcolor="#FFFFFF">
+<!--msnavigation-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+    <td> <!-- #BeginLibraryItem "/Library/Top_e.lbi" -->
+<p align="center"><big><font face="Arial" color="#800000"><big><strong>analisi-disegno.com</strong></big></font></big></p>
+<p align="center" style="background-color: #FFFF00"><font face="Arial"><font color="#800000"><b><font color="#000000"><a href="../">Homepage 
+  (in Italian) </a></font> </b></font> <font color="#800000"><b>|</b></font></font><font face="Arial" size="2"> 
+  </font><font face="Arial"><b><a href="../welcome_e.html">In English</a> </b><font color="#800000"><b>| 
+  </b><font face="Arial"><a href="http://acomai.blogspot.com/" target="_blank">Blog</a></font><b><font face="Arial">&nbsp;<font face="Arial"><font color="#800000"><b>|</b></font></font> 
+  </font></b></font><a href="../notiziario.html"><font color="#0000CC"> To be 
+  advised of new documents</font></a></font></p>
+      <hr>
+<!-- #EndLibraryItem --><p align="center"><big><font face="Arial" color="#800000"><big><strong></strong></big></font></big></p>
+
+</td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
+<font FACE="Arial">
+
+<p ALIGN="CENTER">Interview with Ivar Jacobson (by Adriano Comai)</p>
+
+</font><p><font FACE="Arial">- The italian translation of this interview will be published in </font><a href="http://www.mondadori.com/zerouno/"><font FACE="Arial" SIZE="3">ZeroUno</font></a><font FACE="Arial">, September 1999 -</font></p><font FACE="Arial">
+
+<p>[<b>Question</b>]: <i>Mr. Jacobson, you are widely known as the inventor of the
+&quot;Use Case&quot; concept. How was this concept born? Which were the forces that
+brought you to work on this idea? </i></p>
+
+
+<p>[<b>Ivar Jacobson</b>]: It evolved over many years. First of all, I worked in
+telecommunications in my early days, where exists the concept of &quot;traffic
+cases&quot;. The traffic case was like a use case, it was, in fact, a telephone call.
+There were many different kinds of telephone calls, many different kinds of traffic cases.
+That was something I learned there. In that time we had no cases for other things than
+telephone calls. In that early time, I mean back in 1967, I had another term that was
+similar to use case, and meant the same thing: we called them &quot;functions&quot;. A
+function crossed the whole system. A telephone call was a function, but functions were
+also more abstract things, and the term was not really well defined. We used this
+approach, &quot;function-driven development&quot;, that is called now
+&quot;use-case-driven development&quot;. We identified the functions, and then we designed
+the functions, like we do with use cases today. So these ideas are very old. </p>
+
+<p>I identified the use case concept in 1986, and when I had found that concept I knew I
+found something that solved many problems to me, because I could use this concept for
+everything that systems did, and for every kind of system. It helped me a lot to create a
+systematic methodology.</p>
+
+<p>[<b>Q</b>]: <i>The Use case concept is like a filter that distinguishes between
+functions related to the user and functions internal to the system&#133;</i></p>
+
+
+<p>[<b>IJ</b>]: Yes, it discriminates lots of functions, that can not be use cases. It's
+much more specific. A function could be anything, that's the problem. Use cases cannot be
+anything.</p>
+
+<p>[<b>Q</b>]: <i>What are the roots, the ancestors to the UC concept in the software
+engineering literature?</i></p>
+
+
+<p>[<b>IJ</b>]: I don't know. Actually, I don't have anything like that. I think the
+closest thing was this idea of traffic cases.</p>
+
+<p>But I want to make a point. It may be the truth that I am most known for the use cases,
+but we had component-based development in 1967, and use cases were not there, so
+component-based development is something I've been working in my whole life. The other
+think is architecture, I mean really to identify an architecture before doing everything
+else. We talked about software architecture in 1968. We presented the software
+architecture when we went out to our customers, and I remember they had never heard about
+anything like that. They tought about architecture for hardware, but there was not an
+architecture for software.</p>
+
+<p>[<b>Q</b>]: <i>The use case concept seems, today, almost obvious, common sense...</i> </p>
+
+<p>[<b>IJ</b>]: And I think it is.</p>
+
+<p>[<b>Q</b>]: <i>Yet it was marvelous to see how quickly and broadly it was accepted by
+other methodologists. How could this happen with so few resistances?</i> </p>
+
+<p>[<b>IJ</b>]: Most of the methodologists went into the objects world, and there was a
+lot of competition. However, the use case didn't compete with anything, and it solved a
+problem that everyone had. Even the concept of scenario was about something internal to
+the system, about internal interactions, but was not really specified.</p>
+
+<p>One thing I did late was to publish. If you look upon my 1987 paper, for the OOPSLA,
+there I had all these things, but the problem I had was that I could sell my book, the
+Objectory book, in 1990-1991, for 25.000 $ a copy, so why should I go and give it away to
+Addison-Wesley or any other publisher, to then get 3 $ a copy, even if that was selling
+many more? Now I understand that I should have done it a little bit differently, but it's
+very hard to say, you have to be at the right time. So I think the other books helped us,
+because they had a big problem, that was how to get from requirements to start an OO
+analysis and design, but I refuse the idea that just the fact that people publish their
+book, they were first with the idea: they were older ideas.</p>
+
+<p>[<b>Q</b>]: <i>Use case specifications are mainly textual (although they can be
+complemented with UML diagrams). Previous methods (as Structured Analysis, or Information
+Engineering) proposed the use of diagrams as a &quot;common language&quot; to reach an
+agreement between customers (&quot;users&quot;) and developers. What's behind this
+resurgence of the role of text?</i></p>
+
+
+<p>[<b>IJ</b>]: In reality, today, customers of software don't want to read diagrams. Use
+case diagrams are so intuitive that everyone can read them. Text is something people don't
+need to learn a special language to use. </p>
+
+<p>We can use activity diagrams to describe use cases, and it's very nice, but there are
+two problems with that. First, they become very quickly very detailed, and it's not sure
+that they are more understandable because they are detailed, even if there is no doubt
+that at some point you need to specify in more detail. But we think that the best way to
+do that is in terms of the analysis model, where you describe every use case as a
+collaboration among objects, instead of trying to detail the use case without talking
+about objects. You can use activity diagrams, but activities can be very abstract, so it's
+very hard to understand them, you really need to understand what has to be done, to
+understand the activities. So I'm very careful in introducing a formalism in use cases. I
+think that when you go to analysis you get a much better formalism, a much better language
+to express details, because you talk about objects. </p>
+
+<p>[<b>Q</b>]: <i>Maybe activity diagrams cannot convey so much information as text &#133;
+</i></p>
+
+
+<p>[<b>IJ</b>]: Yes, it's just a pragmatic thing, it's not a holy cow. In some cases it is
+maybe good to use activity diagrams, but I think I want to have a warning there, because
+it's better to be detailed when you have the right language to express details. And I
+think that in analysis when we talk about objects, and about collaborations between
+objects, even if these objects are conceptual, and not physical, implementation things,
+they are much more concrete and much easier to understand than just activities.</p>
+
+<p>[<b>Q</b>]: <i>What about the ambiguity of natural language?</i></p>
+
+
+<p>[<b>IJ</b>]: Yes, it is ambiguous, but I think there is a trade-off. &#133; Language is
+understandable, it's ok to use just english. On the other hand, in situations when we have
+hard use cases, with a lot of interactions, you may need to go further. But it's better to
+view the analysis model as part of the requirements. In the new Unified Process book I've
+taken a little step in that direction, I view analysis as a part of requirements, and one
+of the things we get from analysis is the structure that we would like to see in the
+design and in the implementation, so we have some requirements on the architecture that we
+create through analysis.</p>
+
+<p>[<b>Q</b>]: <i>Use cases have a double role in your method. First, they are used to
+discover and to validate requirements coming from customers and users. Then, they drive
+the whole system development. Is one of these roles more important than the other?</i></p>
+
+
+<p>[<b>IJ</b>]: No, of course not. But many methodologists, and many software developers
+are very technology-introvert. If the use case concept wasn't so good in describing
+interactions, and helping to define collaborations, they wouldn't have bought into it. So
+it does work as a very good sales argument to software developers: they would never have
+been accepted as widely as they are, if they hadn't this impact on the design, if they
+didn't drive the development. For me, anyway, both aspects are equally important, it's a
+very nice way to find the requirements, and to capture requirements in some kind of
+diagram, without going into the internals of the system. They are used to capture and to
+identify scenarios, and describe relationships between these things.</p>
+
+<p>[<b>Q</b>]: <i>In your book, you speak about feature list of requirements as a starting
+point to derive use cases.</i></p>
+
+
+<p>[<b>IJ</b>]: The feature list is something that will be translated to use cases, and
+the documentation will describe the use cases, so the feature list will grow and shrink,
+as you translate the requested features into use cases.</p>
+
+<p>[<b>Q</b>]: <i>Some years ago, you applied the use case concept, and other Objectory
+ideas, to the business process reengineering area. How well has been your proposal
+accepted by non-IT people? Are use cases used in business engineering so much as in the IT
+area?</i></p>
+
+
+<p>[<b>IJ</b>]: No, they are not, for several reasons. Rational has selected to work
+primarily in software, even if we understand completely the importance to do business
+engineering. However, we also know that the tools people need for business engineering are
+easily described in terms of tools for software engineering. If you have Rose for visual
+modeling, you can extend it, to make it work for business engineering as well, but not the
+other way round. We still need to have a good tool for visual modeling of software. We
+have been working on Business Engineering, but we have done it locally, in Scandinavia,
+and we have in Sweden a Service Package from Rational, called Rational Business
+Engineering, with a specialization of Rose and detailed process descriptions.</p>
+
+<p>Anyway, the customer base for software engineering is much larger. People who wants to
+do business modeling are typically people who understand software, and who understand they
+need more. It's very sad that people from business engineering, like Hammer, didn't think
+about modeling so much, so the stream of people that come from that part is much fewer,
+most people come to business modeling from the software world. It's a much smaller
+business, but we have customers with hundreds of licences of Rose for Business
+Engineering, for example in one telecom company and in the swedish pension system. </p>
+
+<p>[<b>Q</b>]: <i>Did you have any contact with people like Hammer or Champy about your
+business modeling proposal?</i></p>
+
+
+<p>[<b>IJ</b>]: No, I read their books, of course, and, we have been doing business
+engineering for many years, but when I read the books I said: &quot;oh, here we have a guy
+who presents a problem, and he gives a sketch, an outline of the solution, but he cannot
+model it, and if you don't model it you don't understand it&quot;. Anyway, I feel that
+Hammer work and our work were very tighly related. </p>
+
+<p>Another important idea is one-to-one marketing. One of the people that worked for me at
+Objectory is now working on it, and she thinks that our approach is perfect for it. This
+is an area in which I'm thinking to do more work in the future. I always work in the long
+term, on what happens five years from now and so on, and there are two areas in which I
+will work in the near future, one is business engineering, and how that is impacted by the
+new world, the internet world, and the other thing is software development in the context
+of the web, applications for the web. Even if the web changes everything, and it changes
+basically everything we do in business, the way we develop software for the web doesn't
+change very much. It's basically the same thing, but there is one thing that is different,
+and that's the user interface. The user interface design is very important.</p>
+
+<p>[<b>Q</b>]: <i>I saw you quote from Larry Constantine in your last book about this
+issue. Do you like his approach?</i></p>
+
+
+<p>[<b>IJ</b>]: Very much. His last book is a very good one. The only problem I have with
+it is that, instead of using the UML, he uses his own notation which is much weaker, not
+so well defined, and he has a different approach to what a model is, but there are lots of
+good things in that book. I like it a lot, it's the best book I've seen in 3 years in
+software.</p>
+
+<p>[<b>Q</b>]: <i>Is it more difficult to persuade IT- or non IT-people of the importance
+to do business modeling as a starting point for a new project or for the evolution of an
+existing system? </i></p>
+
+
+<p>[<b>IJ</b>]: The problem is that we don't have the time. Time-to-market is today&#133;
+it's more important that you get something out than that it's a good thing, and that means
+that these approaches must be very tightly integrated. IT people know that to do business
+models takes 6 months, 12 months, and when they start to build the software, the business
+has changed. What's unique about our approach is that business modeling is part of the
+process, so if you have a software that takes 6 months to develop, than you do business
+engineering for 6 months. I can understand that people hesitate to do business modeling:
+if we think quality is not so important in order to get it out, then we will always have
+problems with any structured approach to develop software. But with iterative development
+we get something out according to the plan, and I think that will help people to
+understand the need for business modeling, continuously, during all the time.</p>
+
+<p>[<b>Q</b>]: <i>The UML was a collective creation. And so the Unified Process. But in
+the latter, your own contribution is more clear, more apparent. UP roots are more in the
+Objectory / OOSE ground than in the Booch method or in OMT. Does this reflect a sort of
+&quot;division of labor&quot; among the Amigos? </i></p>
+
+
+<p>[<b>IJ</b>]: I don't think that we have divided on purpose. Some people are experts on
+everything, and it's hard to see that anyone of us three would agree that there is an area
+in which we don't have any expertise. Honestly, I think there is no division of work. It's
+a fact that we started from Objectory, when developing the Rational Unified Process, and
+from there we have evolved. And of course, you cannot move from object modeling, just
+object modeling. There is not a simple way to go from approaches like OMT, or Booch, to do
+what we did in Objectory. So it is easier to go the other way round, thinking about use
+cases and then you have objects and classes and subsystems to design. </p>
+
+<p>[<b>Q</b>]: <i>Booch and Rumbaugh moved from software, while you moved from customers
+and users &#133;</i></p>
+
+
+<p>[<b>IJ</b>]: Yes, but there is also another aspect. Components are what we have to
+start with. I actually started with components. In 1967, when I was introducing this
+approach at Ericsson, the main objection I had from developers was that these components,
+that we developed, were not easily related to the &quot;functions&quot;, or the &quot;use
+cases&quot;. If you take the use case, the use case crosses many components: that was an
+objection. They were thinking in terms of &quot;one function, one module&quot;.</p>
+
+<p>Whereas I was saying, well, that's not ok. Most of one function, or one use case, will
+be implemented by one component; but then the other components will play a role in that
+use case. So that was one of the objections. And I said: that's exactly this objection
+that I will turn into something positive: this is exactly what you need, you need to have
+that complexity, because that's how it is. So the outside world talks about use cases, but
+inside use cases cross these components - subsystems. </p>
+
+<p>Just having objects and components, and don't care about things that cross them, is a
+smaller problem. One of the difficult things is to make use case realizations, and to
+manage dependencies between subsystems, and that's much harder. Thinking just upon objects
+is a much smaller problem, it's a sub-problem.</p>
+
+<p>No, I don't think there is any conscious decision on dividing work - we think that the
+UML was a big task, and we had to work together to get it done. Now we are working on
+different things; we just don't think it's meaningful to work together on everything.</p>
+
+<p>[<b>Q</b>]: <i>Do you expect for the Unified Process a success and an impact on the IT
+industry, analogous to that of the UML?</i></p>
+
+
+<p>[<b>IJ</b>]: Yes, absolutely yes, and we have very good reasons to believe that. We are
+making inroads into many corporations today, and it's our goal to get there. We don't
+think it would be an easy thing to make the Unified Process a standard, it would be so
+much hard work and so much opposition, so we'd rather do it in small steps. Instead of
+going and forcing people through a standard, let people convince themselves. And I think
+that everyone that looks at the Rational Unified Process will become convinced this is the
+way they've got to do it, as soon as they have started to look at it. There is nothing
+even close to it. Many people tried to say that there is, but what is that they have? They
+have something that can be compared with my book, but they don't have anything that can be
+compared with our process. If you just look upon it in terms of substance, and depth, and
+experience, and so on, and if you compare &#133; How old is Approach A, or Approach B? Do
+we know that it works, for large projects? We know that our works. It's really very
+different. </p>
+
+<p>[<b>Q</b>]: <i>How much of Objectory is left in the Unified Process?</i></p>
+
+
+<p>[<b>IJ</b>]: If you look just upon the basic ideas, we basically only covered
+requirements, analysis and design in Objectory. If you look upon these things, what was in
+Objectory in the old days is still there. But there's a lot of new stuff that has been
+added. We had very little about implementation, very little about testing, nothing about
+configuration management and version control, nothing about project management. Iterative
+development was primarily something we recommended, but it was not enforced by the
+process, we didn't really tell about the differences among the various iterations, so I
+think the core ideas are still there, but there are lots of other things that have been
+added. The Rational Unified Process is really a teamwork, we have a lot of people that
+have been involved. Whereas the Objectory Process was primarily my ideas, my work that we
+implemented. But, given the smaller resources we had, it was quit a lot.</p>
+
+<p>[<b>Q</b>]: <i>You present every iteration like a mini-waterfall &#133;</i></p>
+
+
+</font><p><font FACE="Arial">[<b>IJ</b>]: Yes, we think of it as a mini-waterfall, but we have a lot of parallelism.
+Within the waterfall, the people who develop subsystems work concurrently on their
+subsystems. So people who work on use cases rather independently talk to one another so
+they don't invent new things and so they</font><font FACE="Arial" COLOR="#0000ff"> </font><font FACE="Arial">reuse the same components, but they work concurrently on subsystems during an
+iteration. But that is still waterfall, because you always start with requirements, then
+you go through analysis, and then through design activities.</font></p><font FACE="Arial">
+
+<p>[<b>Q</b>]: <i>You come from Sweden. Do you feel there is an European specificity in
+system and software engineering? Maybe more concern, more care about organizational issues
+than in the US?</i></p>
+
+
+<p>[<b>IJ</b>]: I have not been able to find any systematic difference, because I found
+people in the US very interested in starting with the business, in understanding the
+business, before they develop the software, and in Europe too. There is no systematic
+difference. It would be more funny&#133; There has been a lot of research, in Europe, in
+areas that are more at an abstract level, and less in the concrete, physical world, but I
+must say that a lot of research has been done, and with useful results, both in the US and
+in Europe - and also a lot of work done that never led to anything.</p>
+
+<p>[<b>Q</b>]: <i>Now the greatest part of the &quot;unifying&quot; effort is done. Are
+you going to rest, and capitalize on it, or are you moving forward to other areas of
+interest? What next?</i> </p>
+
+<p>[<b>IJ</b>]: There is one part of me that says: I want to go ahead, and look for what
+needs to be done, to create a much better world, and we have a lot of things to do. In a
+way, UML is a standard, and that's wonderful. But it doesn't mean that these are new
+ideas, we just got them consolidated. In the last years, I don't think I've done anything
+really new, I pushed the adoption process more than the creation process. Now a part of me
+wants to take a next step. What is beyond the Unified Process? What is beyond UML? I think
+it is still an evolution, not a revolution, but there are some important steps that need
+to happen in software, to get up to the level of extremely high quality which we need to
+develop the systems we will want to develop in the 2020, or something like that. These are
+much larger systems than we can think of today, and more complex, and we need to be able
+to develop these systems. We need a much better infrastructure than we have today, in
+terms of operating systems, programming languages, UML integrated with programming
+languages, maybe part of the UML will be a programming language, with action language
+semantics and so on. That's one thing I'm constantly thinking of . </p>
+
+</font><p><font FACE="Arial">The other thing is to capitalize on business engineering. There is something really
+interesting to get done, there. The Rational Unified Process is very well prepared for the
+Web. Many of the companies who develop websites are using the Rational Unified Process
+today, specializing it a little bit, so it fits for their special purposes, but it's the
+same process. I would like to see that we extend and make the right decisions to make the
+required model improvements, in the Rational Unified Process, changes</font><font FACE="Arial" COLOR="#0000ff"> </font><font FACE="Arial">that make it clearly, without any
+doubt, &quot;the&quot; process for web sites applications design.</font></p><font FACE="Arial">
+
+<p>I'm also going to write a revision of my book &quot;The Object Advantage&quot; for the
+end of this year. The Internet, and ideas like one-to-one marketing, will have a lot of
+impact on this revision. We need to make the book more approachable for business people,
+and not only for software people. We will show how to use it in the context of business,
+not only in the context of software. The basic ideas are already there, it works very
+well, customers are happy, but today we need to take that through the barrier of IT,
+solving the problem existing with the acceptance of technical notation. Activity diagrams
+are very useful for business modeling.</p>
+</font>
+
+<p><font size="2" face="Arial">--&gt; back to <a href="../welcome_e.html">analisi-disegno.com
+english home</a></font><!--msnavigation--></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+    <td> <!-- #BeginLibraryItem "/Library/Bottom_e.lbi" --><hr>
+<p align="center"><font face="Arial"><a href="../">analisi-disegno.com</a> 
+  , services and documents for software development, by <a href="../a_comai/adriano_comai_e.htm">Adriano 
+  Comai</a>. </font></p>
+<!-- #EndLibraryItem --><font face="Arial"><small></small></font></td>
+  </tr><!--msnavigation--></table></body>
+</html>

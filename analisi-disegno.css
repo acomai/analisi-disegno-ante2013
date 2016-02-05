@@ -1,0 +1,32 @@
+body {color:black}
+
+a:link {color:blue}
+h1, h2, h3, h4, h5, h6, p, b, li, blockquote, table
+{
+	font-family: arial
+}
+p {text-align:left}
+
+p.iniziale {text-align:center; font-size: 150%; font-weight: bold; color:#800000;}
+
+p.menu {text-align:center; background-color:#FFFF00; color:#800000; font-weight: bold; }
+
+p.centered {text-align:center}
+
+p.italics {font-style: italic}
+
+p.bold  {font-weight: bold}
+
+h1 {text-align:center; color:#800000; font-size: 120%}
+
+h2 {font-size: 100%}
+
+h2.centered {text-align:center}
+
+h3 {font-size: 100%; font-style: italic}
+
+th, td {border: thin solid black}
+
+table {border-collapse:collapse;}
+
+

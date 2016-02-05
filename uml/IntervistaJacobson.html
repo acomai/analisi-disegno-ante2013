@@ -1,0 +1,323 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 4.0">
+<title>analisi-disegno.com - Intervista a Ivar Jacobson: 23 giugno 1999</title>
+
+<meta name="Microsoft Border" content="tb, default">
+</head>
+
+<body bgcolor="#FFFFFF">
+<!--msnavigation-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+    <td> <!-- #BeginLibraryItem "/Library/Top.lbi" -->
+<p align="center"><big><font face="Arial" color="#800000"><big><strong>analisi-disegno.com</strong></big></font></big></p>
+<p align="center" style="background-color: #FFFF00"><font face="Arial"><font color="#800000"><b><font color="#000000"><a href="../">Homepage</a></font> 
+  </b></font></font>&nbsp;<font face="Arial"><font color="#800000"><b>|</b></font></font> 
+  <font face="Arial"><a href="../notiziario.html" target="_blank">Notiziario</a><font color="#800000"><b>&nbsp;|</b></font></font> 
+  <font face="Arial"><b><a href="../welcome_e.html"><font face="Arial, Helvetica, sans-serif">In 
+  English</font></a></b></font></p>
+      <hr>
+<!-- #EndLibraryItem --><p align="center"><big><font face="Arial" color="#800000"><big><strong></strong></big></font></big></p>
+
+</td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
+<font FACE="Arial" SIZE="3">
+
+      <p ALIGN="CENTER"><font color="#990000"><b>Intervista a Ivar Jacobson</b></font> 
+        (di Adriano Comai)</p>
+
+<p>- l'intervista &egrave; stata pubblicata sul numero 213 (ottobre 1999) di <a href="http://zerouno.mondadori.com">ZeroUno</a> -</p>
+</font><font FACE="Arial">
+
+<p><strong>ZeroUno</strong>: Dottor Jacobson, Lei &egrave; noto come ideatore del concetto di
+&quot;caso d'uso&quot;. Quali sono le radici dei casi d'uso nella storia dell'ingegneria
+del software? </p>
+
+<p><strong>Ivar Jacobson</strong>: Non saprei, direi che non ce ne sono. Quando ero
+giovane lavoravo nel settore delle telecomunicazioni, dove esistevano i &quot;casi di
+traffico&quot;. Erano, di fatto, le chiamate telefoniche, e ce n'erano di tipi diversi,
+ciascuno dei quali era un tipo particolare di &quot;caso di traffico&quot;. In quegli
+anni, attorno al 1967, c'era un altro termine simile a &quot;caso d'uso&quot;, e con lo
+stesso significato, cio&egrave; &quot;funzione&quot;. Una chiamata telefonica era una funzione,
+ma erano &quot;funzioni&quot; anche cose pi&ugrave; astratte, in quanto il termine non era
+definito con precisione. Il nostro era uno sviluppo &quot;function-driven&quot;: si
+identificavano le funzioni e poi le si progettava, come facciamo oggi con i casi d'uso.</p>
+
+<p><strong>ZeroUno</strong>: Il concetto di caso d'uso &egrave; come un filtro che distingue tra
+le funzioni significative per l'utente e quelle interne al sistema &#133;</p>
+
+<p><strong>Ivar Jacobson</strong>: S&igrave;, elimina molte funzioni, che non possono essere
+considerate casi d'uso. &Egrave; un concetto molto pi&ugrave; specifico. Qualsiasi cosa pu&ograve; essere
+una funzione, questo &egrave; il problema. Mentre i casi d'uso non possono essere qualsiasi
+cosa. </p>
+
+<p>Ho ideato il concetto di caso d'uso nel 1986, e ho capito subito che era la soluzione a
+molti problemi, perch&eacute; lo potevo usare in tutto lo sviluppo dei sistemi, e per ogni tipo
+di sistema. Mi &egrave; stato molto utile per creare una metodologia sistematica.</p>
+
+<p>Voglio per&ograve; chiarire un aspetto. Pu&ograve; essere vero che la mia fama &egrave; legata
+soprattutto ai casi d'uso, ma noi sviluppavamo sistemi a componenti nel 1967, quando i
+casi d'uso non c'erano ancora, ed &egrave; sullo sviluppo a componenti che ho lavorato per tutta
+la vita. Un altro aspetto su cui ho sempre insistito, gi&agrave; da quegli anni, &egrave; la
+necessit&agrave; di definire un'architettura prima di fare qualunque altra attivit&agrave; di
+sviluppo. Quando andavamo dai clienti presentavamo l'architettura software dei nostri
+sistemi, e ricordo che non avevano mai sentito parlare di una cosa del genere. Si parlava
+di architetture hardware, ma non di architetture software.</p>
+
+<p><strong>ZeroUno</strong>: Oggi i casi d'uso sembrano un concetto quasi ovvio, scontato
+&#133; </p>
+
+<p><strong>Ivar Jacobson</strong>: E penso che sia proprio cos&igrave;.</p>
+
+<p><strong>ZeroUno</strong>: Ma &egrave; stato straordinario vedere con quale rapidit&agrave; sono
+stati accettati dagli altri metodologi. Come mai cos&igrave; poca opposizione? </p>
+
+<p><strong>Ivar Jacobson</strong>: A un certo punto la maggioranza dei metodologi si &egrave;
+buttata sul mondo degli oggetti, e c'era molta competizione. Ma i casi d'uso non
+competevano con nulla, e risolvevano un problema che avevano tutti. Anche il concetto di
+scenario era relativo alle interazioni interne al sistema, e non era ben specificato. Di
+fatto, i libri degli altri metodologi ci hanno aiutato, perch&eacute; avevano una lacuna proprio
+sul modo in cui partire dai requisiti per effettuare l'analisi e il disegno.</p>
+
+<p>Un aspetto su cui personalmente mi sono mosso in ritardo &egrave; stato la pubblicazione di
+testi. Se si guarda al mio intervento all'OOPSLA nel 1987, c'erano gi&agrave; tutte le idee, fin
+da allora. Il fatto, per&ograve;, era che in quel periodo potevo vendere il testo della mia
+metodologia, Objectory, per 25.000 dollari alla copia. Perch&eacute;, pensavo allora, dovrei
+pubblicarlo presso un editore, per guadagnare 3 dollari a copia? Adesso capisco che avrei
+dovuto agire in modo diverso, ma &egrave; difficile scegliere i tempi giusti. </p>
+
+<p><strong>ZeroUno</strong>: Le specifiche dei casi d'uso sono essenzialmente sotto forma
+di testo (anche se possono essere corredate da diagrammi UML). Al contrario, metodi
+precedenti, come l'Analisi Strutturata o l'Information Engineering, proponevano l'utilizzo
+di diagrammi come &quot;linguaggio comune&quot; tra clienti (o &quot;utenti&quot;) e
+sviluppatori. Cosa c'&egrave; dietro questa rinascita del testo?</p>
+
+<p><strong>Ivar Jacobson</strong>: In realt&agrave;, oggi, i clienti dei sistemi software non
+vogliono leggere diagrammi, e non c'&egrave; bisogno di imparare un linguaggio speciale per
+leggere un testo. Se invece si vuole una rappresentazione visiva, i Diagrammi dei Casi
+d'Uso sono cos&igrave; intuitivi che pu&ograve; leggerli chiunque. </p>
+
+<p>Per descrivere i casi d'uso si possono anche usare i Diagrammi di Attivit&agrave;, ma hanno
+qualche controindicazione. Diventano rapidamente molto dettagliati, e non &egrave; detto che
+ci&ograve; li renda pi&ugrave; comprensibili. Non c'&egrave; dubbio che prima o poi bisogna specificare in
+dettaglio, ma noi pensiamo che il modo migliore per farlo sia nel modello di analisi, dove
+ogni caso d'uso viene descritto come una Collaborazione tra oggetti. Le attivit&agrave; possono
+essere talmente astratte da renderne difficile la comprensione: bisogna capire bene ci&ograve;
+cha va fatto, per comprendere le attivit&egrave;. Quindi sono molto cauto nell'introdurre
+formalismi per i casi d'uso. Quando si passa all'analisi si ha a disposizione un
+formalismo molto migliore, un linguaggio pi&ugrave; adeguato per esprimere i dettagli, perch&eacute;
+si parla di oggetti, e di collaborazioni tra oggetti. </p>
+
+<p>&Egrave; un aspetto pragmatico, non un dogma. A volte pu&ograve; essere opportuno usare i Diagrammi
+di Attivit&agrave;, ma voglio segnalare una criticit&agrave;, perch&eacute; &egrave; meglio dettagliare quando si
+ha a disposizione il linguaggio giusto per farlo. Anche se gli oggetti di analisi sono
+concettuali, e non cose fisiche, implementative, sono comunque molto pi&ugrave; concreti e
+comprensibili che non le attivit&agrave;.</p>
+
+<p><strong>ZeroUno</strong>: E l'ambiguit&agrave; del linguaggio naturale?</p>
+
+<p><strong>Ivar Jacobson</strong>: S&igrave;, &egrave; ambiguo, ma ci sono pro e contro&#133; Il
+linguaggio naturale &egrave; comprensibile. D'altra parte, quando abbiamo a che fare con casi
+d'uso complessi, con molte interazioni, si pu&ograve; avere bisogno di specificare maggiormente.
+Ma &egrave; meglio considerare il modello di analisi una parte integrante dei requisiti, come ho
+fatto nel nuovo libro sullo Unified Process. In questo modo, uno dei risultati prodotti
+dall'analisi &egrave; la struttura che vorremmo vedere nel disegno e nell'implementazione, cio&egrave;
+i requisiti architetturali. </p>
+
+<p><strong>ZeroUno</strong>: I casi d'uso rivestono un ruolo duplice nel Suo metodo. Prima
+vengono utilizzati per scoprire e validare i requisiti provenienti da clienti e
+utilizzatori, e successivamente guidano l'intero processo di sviluppo. Esiste una
+graduatoria di importanza tra i due ruoli?</p>
+
+<p><strong>Ivar Jacobson</strong>: No, naturalmente no. Ma molti metodologi, e molti
+sviluppatori software, sono degli &quot;introversi tecnologici&quot;. Se il concetto di
+caso d'uso non fosse risultato cos&igrave; adatto per descrivere le interazioni, e per definire
+le collaborazioni tra oggetti, non l'avrebbero accettato in modo cos&igrave; generalizzato.
+Quindi questo aspetto &egrave; quello essenziale nei confronti degli sviluppatori, perch&eacute;
+impatta sul disegno, e guida l'intera attivit&agrave; di sviluppo. Per me, comunque, i due
+aspetti sono ugualmente importanti. Si tratta di un ottimo modo per scoprire i requisiti e
+di documentarli, e per identificare gli scenari, senza entrare nelle caratteristiche
+interne del sistema. </p>
+
+<p><strong>ZeroUno</strong>: Nel libro sullo Unified Process Lei parla della lista dei
+requisiti (&quot;feature list of requirements&quot;) come del punto di partenza per
+l'identificazione dei casi d'uso. </p>
+
+<p><strong>Ivar Jacobson</strong>: La lista dei requisiti viene tradotta in termini di
+casi d'uso, ma la documentazione del sistema deve descrivere i casi d'uso. Quindi la lista
+dei requisiti tender&agrave; a crescere con le nuove richieste, e a sgonfiarsi quando le
+richieste vengono tradotte in forma di casi d'uso. </p>
+
+<p><strong>ZeroUno</strong>: Alcuni anni fa Lei ha proposto l'utilizzo dei casi d'uso per
+le attivit&agrave; di Business Process Reengineering. Quali sono stati i risultati? Vengono
+utilizzati in modo massiccio come nell'area IT? </p>
+
+<p><strong>Ivar Jacobson</strong>: No, e per molte ragioni. Rational ha scelto di operare
+soprattutto nel campo del software, anche se ci &egrave; chiara l'importanza del Business
+Engineering. Gli strumenti necessari a chi fa Business Engineering sono in ogni caso
+derivabili da quelli per il Software Engineering. &Egrave; possibile ad esempio estendere Rose
+[NdT: il prodotto di Rational per la modellazione visuale] per renderlo adatto anche ad
+attivit&agrave; di Business Engineering, mentre non &egrave; possibile fare il contrario. &Egrave; quello
+che abbiamo fatto a livello locale, in Scandinavia, dove abbiamo un service package,
+chiamato Rational Business Engineering, con una specializzazione di Rose e delle
+specifiche di processo dettagliate. </p>
+
+<p>Nei fatti, il mercato potenziale per il Software Engineering &egrave; molto pi&ugrave; ampio. Le
+persone che fanno Business Modeling, tipicamente, capiscono bene il mondo del software, ed
+hanno la consapevolezza di avere bisogno di spingersi oltre, nella modellazione del
+business. &Egrave; triste che i grandi nomi del Business Engineering, come Hammer, il cui lavoro &egrave; strettamente imparentato con il nostro, non abbiano dedicato un'attenzione sufficiente
+alla modellazione. Hammer espone i problemi, e fornisce degli abbozzi di soluzione. Ma non &egrave; in grado di rappresentare i problemi in un modello, e se non &egrave; in grado di modellarli 
+non &egrave; neppure in grado di comprenderli fino in fondo. La conseguenza di questa scarsa
+attenzione alla modellazione &egrave; che l'interesse proveniente da quel settore &egrave; molto pi&ugrave;
+ristretto: la maggioranza di coloro che fanno attivit&agrave; di Business Modeling arriva dal
+mondo del software. Comunque abbiamo clienti con centinaia di licenze di Rose per il
+Business Engineering, ad esempio in una Telecom e nell'ente che gestisce il sistema
+pensionistico in Svezia.</p>
+
+<p>L'altra ragione della difficolt&agrave; che incontra il Business Engineering &egrave; che la gente
+dice di non trovare il tempo sufficiente per questa attivit&agrave;. E' il problema del
+&quot;time to market&quot;: &egrave; pi&ugrave; importante tirare subito fuori qualcosa di
+rilasciabile che non la qualit&agrave; del prodotto. Il che significa che le due attivit&agrave;,
+Business Engineering e Software Engineering, devono diventare pi&ugrave; integrate tra loro. Gli
+informatici sanno che modellare il business richiede tempo, e che quando iniziano a
+costruire il software, il business &egrave; gi&agrave; cambiato, e il modello che lo descriveva &egrave;
+diventato obsoleto. La novit&agrave; del nostro approccio &egrave; che il Business Modeling &egrave;
+all'interno del processo, e che se per costruire il software ci vogliono sei mesi, in
+questi sei mesi si svolgono anche attivit&egrave; di Business Engineering. </p>
+
+<p>Capisco che si abbiano resistenze al Business Modeling: se riteniamo che la qualit&agrave;
+non sia molto importante, avremo sempre dei problemi ad adottare un qualunque approccio
+organizzato allo sviluppo del software. Ma uno sviluppo di tipo iterativo produce
+risultati in tempi utili, e credo che questo approccio render&agrave; la gente consapevole
+dell'esigenza di fare Business Modeling, con continuit&agrave;, nel corso di tutto lo sviluppo.</p>
+
+<p><strong>ZeroUno</strong>: UML e lo Unified Process sono state creazioni collettive. Ma
+il Suo contributo personale &egrave; pi&ugrave; evidente per quanto riguarda il processo, che deriva
+pi&ugrave; dal filone Objectory / OOSE che non dal metodo di Booch o da OMT di Rumbaugh. Si pu&ograve;
+parlare di una divisione del lavoro tra voi &quot;Amigos&quot;?</p>
+
+<p><strong>Ivar Jacobson</strong>: No, nessuna divisione del lavoro. Ci sono persone
+esperte di tutto, e non credo che uno di noi tre ammetterebbe l'esistenza di un'area in
+cui non ha alcuna esperienza. &Egrave; per&ograve; un fatto che siamo partiti da Objectory, per
+sviluppare il Rational Unified Process, e che non avremmo potuto partire dal semplice
+Object Modeling, perch&eacute; non &egrave; semplice partire da approcci come Booch, o OMT, e arrivare
+al livello di Objectory. Molto meglio la strada opposta, che parte dai casi d'uso per
+scoprire gli oggetti, le classi ed i sottosistemi da progettare. </p>
+
+<p><strong>ZeroUno</strong>: Booch e Rumbaugh partivano dal software, Lei invece dai
+clienti e dagli utenti&#133;</p>
+
+<p><strong>Ivar Jacobson</strong>: S&igrave;, ma &egrave; non solo questo. Il fatto &egrave; che bisogna
+partire dai componenti. Nel 1967, quando iniziavo a introdurre questo approccio in
+Ericsson, l'obiezione maggiore che ricevevo dagli sviluppatori era che i componenti che
+progettavamo non erano riconducibili in modo diretto alle &quot;funzioni&quot;, cio&egrave; ai
+casi d'uso, e che ogni caso d'uso coinvolgeva pi&ugrave; di un componente. Il loro modo di
+vedere era: &quot;ci vuole un modulo per ogni funzione&quot;, mentre io non ero d'accordo.
+La maggior parte di una funzione, cio&egrave; di un caso d'uso, viene implementata da un
+componente, ma il caso d'uso coinvolge anche altri componenti. Quindi mi sforzai di
+trasformare l'obiezione in termini positivi, affermando che la complessit&agrave; del rapporto
+tra casi d'uso e componenti era necessaria. Il mondo esterno vede i casi d'uso, ma
+all'interno del sistema ogni caso d'uso coinvolge pi&ugrave; componenti, pi&eugrave; sottosistemi. </p>
+
+<p>Guardare solo agli oggetti e ai componenti, senza preoccuparsi di ci&ograve; che li lega, &egrave;
+solo una piccola parte del problema. Il difficile &egrave; progettare le realizzazioni dei casi
+d'uso, ed in particolare gestire le dipendenze tra i sottosistemi. </p>
+
+<p>No, non c'&egrave; stata una decisione vera e propria di dividere il lavoro tra noi. Definire
+UML era un compito arduo, e avevamo bisogno di collaborare per portarlo a termine. Ora
+lavoriamo su temi diversi; non ha senso operare insieme su tutto. </p>
+
+<p><strong>ZeroUno</strong>: Si aspetta che lo Unified Process abbia un successo ed un
+impatto analoghi a quelli di UML? </p>
+
+<p><strong>Ivar Jacobson</strong>: Assolutamente s&igrave;, ed abbiamo buone ragioni per
+crederlo, molte organizzazioni lo stanno adottando. Non sarebbe stato semplice fare
+approvare anche lo Unified Process come standard, ci sarebbe voluto troppo lavoro e
+avrebbe incontrato troppa opposizione. Preferiamo che la diffusione avvenga un passo alla
+volta: invece di forzare le persone a conformarsi a uno standard, &egrave; meglio che si
+convincano da sole. Credo che chi d&agrave; un'occhiata al Rational Unified Process si
+convincer&agrave; subito del fatto che &egrave; la strada da seguire, perch&eacute; non ci sono altri
+approcci comparabili. Molti affermano il contrario, ma su quali basi? Ci sono approcci che
+possono essere messi in confronto con il mio libro, che &egrave; solo un'introduzione, ma
+nessuno che sia ad un livello paragonabile al nostro processo, in termini di sostanza, di
+profondit&agrave; e di esperienze di applicazione. Da quanto tempo esistono, gli altri approcci?
+Li abbiamo forse visti funzionare in progetti di grandi dimensioni? </p>
+
+<p><strong>ZeroUno</strong>: Quanto &egrave; rimasto di Objectory nello Unified Process?</p>
+
+<p><strong>Ivar Jacobson</strong>: Nel vecchio Objectory coprivamo solo la definizione dei
+requisiti, l'analisi e il disegno. Questa parte &egrave; rimasta, ma sono state aggiunte molte
+altre cose. Avevamo poco sull'implementazione, in Objectory, poco sul testing, nulla su
+configuration management, version control, project management. Raccomandavamo lo sviluppo
+iterativo, ma senza che il processo entrasse nel merito di come effettuarlo, e sulle
+differenze che vi sono tra le diverse iterazioni. </p>
+
+<p>Il Rational Unified Process &egrave; un lavoro di gruppo, a cui hanno partecipato in molti,
+mentre Objectory Process era costruito essenzialmente sulle mie idee e sul mio lavoro,
+perch&eacute; non disponevamo di molte risorse. </p>
+
+<p><strong>ZeroUno</strong>: Lei presenta ogni iterazione come un mini-waterfall (sviluppo
+&quot;a cascata&quot;)&#133; </p>
+
+<p><strong>Ivar Jacobson</strong>: S&igrave;, ma con molte attivit&agrave; parallele. All'interno del
+waterfall, coloro che sviluppano sottosistemi operano in modo concorrente: chi lavora sui
+casi d'uso nei diversi gruppi si deve confrontare, per riutilizzare i medesimi componenti
+ed evitare di inventare ogni volta la ruota. Comunque, il processo &egrave; ancora a cascata,
+perch&eacute; si parte dai requisiti, poi si fa analisi, quindi disegno, &#133; </p>
+
+<p><strong>ZeroUno</strong>: Lei &egrave; svedese, ma lavora molto anche negli USA. Ha
+riscontrato differenze nell'approccio al software engineering tra Europa e USA? </p>
+
+<p><strong>Ivar Jacobson</strong>: No, nessuna differenza sistematica. In entrambi i
+contesti ho trovato persone consapevoli dell'importanza di partire dal business, prima di
+mettersi a sviluppare il software. In Europa si &egrave; fatta molta ricerca ad un livello pi&ugrave;
+astratto, e meno a livello concreto, ma ci sono stati risultati utili, sia qui che l&agrave; - e
+anche molto lavoro che non ha portato a nulla.</p>
+
+<p><strong>ZeroUno</strong>: Ora la maggior parte del lavoro di &quot;unificazione&quot; &egrave; completo. Cosa pensa di fare? </p>
+
+<p><strong>Ivar Jacobson</strong>: Una parte di me dice: voglio andare avanti, e capire
+cosa bisogna fare per migliorare il mondo. UML &egrave; uno standard, e ci&ograve; &egrave; positivo, ma non
+si tratta di idee nuove: le abbiamo solo consolidate. Negli ultimi anni non penso di aver
+fatto nulla di veramente innovativo, ho lavorato pi&ugrave; sul fronte della diffusione che non
+su quello della creazione. Ora ho bisogno di andare avanti. Cosa c'&egrave; oltre lo Unified
+Process, oltre UML? Si tratta ancora di evoluzioni, e non di rivoluzioni, ma ci sono
+ancora dei passi importanti da fare nel software, per raggiungere il livello di qualit&agrave;
+necessario a realizzare i sistemi che ci serviranno tra venti anni. Saranno sistemi molto
+pi&ugrave; ampi e complessi di quelli attuali. E servir&agrave; un'infrastruttura migliore di quella
+disponibile oggi, in termini di sistemi operativi, di linguaggi di programmazione, di
+integrazione di UML con i linguaggi. Forse una parte di UML sar&agrave; un linguaggio di
+programmazione, con una semantica per la definizione delle azioni. </p>
+
+<p>Comunque ci sono due aree a cui mi dedicher&ograve; nel prossimo futuro. Una &egrave; il Business
+Engineering, ed in particolare l'impatto che il nuovo mondo di Internet, e idee come
+l'&quot;one-to-one marketing&quot; hanno sugli scenari di business. Sto anche lavorando ad
+una revisione del mio libro &quot;The Object Advantage. Business Process Reengineering
+with Object Technology&quot;, che uscir&agrave; alla fine di quest'anno, e dovr&agrave; essere
+maggiormente comprensibile per le persone del business, e non solo per gli informatici.
+Abbiamo bisogno di superare la barriera dell'IT, risolvendo il problema dell'accettazione
+delle notazioni tecniche per il Business Modeling, ed in questo compito un ruolo
+importante sar&agrave; giocato dai diagrammi di attivit&agrave;. </p>
+
+<p>L'altra area &egrave; lo sviluppo di applicazioni software nel contesto web. Anche se il web
+cambia tutti gli scenari business, il modo in cui sviluppiamo software per il web non
+cambia di molto, tranne per un aspetto, sempre pi&ugrave; importante, cio&egrave; l'interfaccia con
+l'utilizzatore. </p>
+
+<p>Il Rational Unified Process &egrave; ben attrezzato per il Web, e viene gi&agrave; utilizzato da
+molti produttori di siti Web, con qualche adattamento per lo scopo specifico. A me
+interessa estenderlo, apportandovi i cambiamenti necessari per farlo diventare, senza
+alcun dubbio, &quot;il&quot; processo per la progettazione di siti Web.</p></font>
+
+      <p><font face="Arial">--&gt; vai a pagina principale </font><a href="uml.htm"><font face="Arial">UML</font> 
+        </a> 
+        <!--msnavigation-->
+    </td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+    <td> <!-- #BeginLibraryItem "/Library/Bottom.lbi" --><hr>
+<p align="center"><font face="Arial"><a href="../">analisi-disegno.com</a>, 
+  servizi e materiali per lo sviluppo dei sistemi software, a cura di <a href="../a_comai/adriano_comai.htm">Adriano 
+  Comai</a>. </font></p>
+<!-- #EndLibraryItem --><font face="Arial"><small></small></font></td>
+  </tr><!--msnavigation--></table></body>
+</html>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
+    "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>analisi-disegno.com - news 2013-04-15</title>
+<meta name="keywords" content="analisi, software, dominio, schema concettuale" />
+<meta name="description" content="analisi, software, dominio, schema concettuale" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="author" content="Adriano Comai" />
+<meta name="robots" content="noarchive" />
+<link rel="stylesheet" type="text/css" href="../analisi-disegno.css"/>
+</head>
+
+<body>
+<p class="iniziale">analisi-disegno.com</p>
+	<p class="menu"><a href="../">Homepage</a>&nbsp;| 
+	<a href="../notiziario.html">Notiziario</a>&nbsp;| <a href="../welcome_e.html">In English</a></p>
+    <hr />
+
+      <h1>analisi-disegno.news - 15 aprile 2013</h1>
+      <h2>Modello di dominio</h2>
+
+<p>Il modello di dominio consiste nella definizione dei concetti propri di un ambito applicativo, e delle loro associazioni.
+</p>
+<p>Se descriviamo un sistema di formazione, saranno concetti come Scuola, Classe, Materia, Insegnante, Allievo. Nella telefonia, saranno concetti come Chiamante, Destinatario, Chiamata, Operatore. In banca, Cliente, Conto, Movimento, Mutuo. Nessun aspetto tecnologico, solo concetti usati da chi opera nell’ambito della materia di riferimento.
+</p>
+<p>La definizione di questi concetti è un aspetto cruciale di ogni progettazione. Prendiamo ad esempio l’ambito editoriale. Cos’è un libro? Cosa si intende per libro?
+</p>
+<p>Il concetto di “libro” può corrispondere a diverse cose, ad esempio a:</p>
+<ul>
+<li>“Promessi sposi” di Alessandro Manzoni (l'opera in sé, indipendentemente dalle diverse edizioni in cui è stata pubblicata, dal 1840 ad oggi)</li>
+<li>“Promessi sposi” di Manzoni, Garzanti, I grandi libri, 2002 (una specifica edizione)</li>
+<li>una copia fisica dell’edizione Garzanti 2002 dei “Promessi sposi”</li>
+</ul>
+<p>Tre cose diverse, con ambiguità da chiarire il prima possibile, per progettare, implementare e verificare la correttezza delle funzioni di un sistema in modo da soddisfare i requisiti degli utenti.
+</p>
+<p>La tecnica tradizionale per la definizione del modello di dominio è l’Entity-Relationship (Entità Relazioni) di Peter Chen, proposta negli anni ‘70 per la progettazione logica delle basi dati. Con la diffusione dell’approccio object oriented, la modellazione dei concetti del dominio è poi arrivata a includere anche la dimensione funzionale associata ai concetti, oltre alla parte relativa agli attributi.
+</p>
+<p>Comunque intesa, la modellazione del dominio basata sul significato dei concetti implica una conoscenza approfondita della materia, e costituisce la base per una migliore definizione delle funzioni applicative.
+</p>                  
+<p>Un modello di dominio efficace può anche migliorare la qualità della collaborazione tra esperti della materia, analisti applicativi e sviluppatori, attraverso la condivisione di conoscenza sui concetti e sul loro significato, con riferimento ad un vocabolario e a delle regole di integrità condivise. E può ridurre notevolmente i rischi di progetto.
+</p>
+      <hr />
+        <h2>Segnalazioni</h2>
+		
+      <p>*** <strong>Ancora sul modello di dominio</strong> ***</p>
+ 
+      <p><a href="http://wirfs-brock.com/blog/2013/02/27/why-domain-modeling/">Why Domain Modeling</a>, 
+      	di Rebecca Wirfs-Brock, esperta di progettazione software e ideatrice dell'approccio Responsibility Driven Design.</p>
+
+      	
+      <hr />
+	  
+      <p>*** <strong>Usabilità e Quality Assurance</strong> ***</p>
+<p>"La Quality Assurance (operare con un alto livello di qualità) è molto più efficace del Quality Control 
+(controllare il livello di qualità quando si ha finito di operare). Meglio introdurre criteri di usabilità 
+dall'inizio - ancora prima di iniziare la progettazione - che aspettare fino a quando il sistema è completo 
+per poi sottoporlo ad una validazione nel testing utente."</p>
+
+<p>Jacob Nielsen, esperto di usabilità, in un <a href="http://www.nngroup.com/articles/quality-assurance-ux/">articolo su Quality Assurance e User Experience</a> ricorda anche 
+quella che chiama la "prima legge dell'usabilità":</p>
+
+<p>"La vostra progettazione sarà comunque testata dagli utenti - potete solo scegliere se fare voi stessi i test 
+prima del rilascio, per mettere a posto a costi inferiori gli inevitabili problemi, oppure spendere molto di 
+più dopo il rilascio."</p>
+
+      <hr />
+	  
+      <p>*** <strong>No DBA</strong> ***</p>
+<p>In molte organizzazioni la <a href="http://www.analisi-disegno.com/a_comai/corsi/sk_dati.htm">progettazione delle basi dati</a> è un'attività centralizzata, delegata ad un ruolo 
+distinto dai gruppi di sviluppo, la Data Base Administration (DBA).
+Le ragioni sono due: favorire una migliore integrazione dei dati tra i diversi sistemi che vi accedono, 
+e usare al meglio competenze specialistiche particolari, come quelle necessarie per ottimizzare le prestazioni 
+negli accessi.</p>
+
+<p>A volte, purtroppo, la DBA centralizzata diventa un collo di bottiglia, e ricorrere ai servizi che offre crea 
+impedimenti e ritardi ai progetti.</p>
+
+<p>Martin Fowler, nell'<a href="http://martinfowler.com/bliki/NoDBA.html">articolo "No DBA"</a>, rileva che questi impedimenti possono portare in alcuni casi i gruppi di 
+sviluppo alla scelta di non usare i DBMS relazionali, gestiti dalla DBA, sostituendoli con altri tipi di 
+tecnologia, come i DBMS NoSQL, che invece la DBA non presidia e che vengono gestiti direttamente dai progetti. 
+E che ciò accade anche quando per le caratteristiche dei progetti un DBMS relazionale andrebbe meglio.</p>
+     <hr />
+	  
+      <p>*** <strong>L'outsourcing del software sta cambiando</strong> ***</p>
+<p>Alcune grandi aziende statunitensi, come General Electric e General Motors, ricostruiscono il proprio settore 
+di sviluppo software, dopo anni di outsourcing, per fornire un supporto più efficace ed efficiente alle 
+proprie strategie. Intanto, le grandi software house indiane assumono sviluppatori negli USA.</p>
+
+<p>Un inserto speciale di The Economist su Outsourcing e Offshoring, con un 
+	<a href="http://www.economist.com/news/special-report/21569576-developed-countries-are-beginning-take-back-service-industry-jobs-too-next-big">
+		articolo dedicato allo sviluppo software.</a></p>     
+
+<hr />
+     
+           <p>*** <strong>Lean Startup</strong> ***</p>
+<p><a href="http://www.amazon.it/The-Lean-Startup-Entrepreneurs-Continuous/dp/0307887898/">Lean Startup</a>, di Eric Ries, è un libro sull'innovazione di prodotto, non (o almeno non solo, come farebbe 
+pensare il titolo) sul lancio di nuove iniziative imprenditoriali.</p>
+
+<p>Il successo di un prodotto, spiega Ries, nasce spesso dall'aver imparato le lezioni necessarie dal fallimento 
+di precedenti tentativi. Per questo motivo, ogni tentativo di innovazione va condotto come un prototipo da 
+controllare e misurare, ottenendo riscontri concreti e verificabili, rapidamente e con il minor costo possibile. 
+Per poter poi aggiustare il tiro.</p>
+     <hr />
+
+           <p>*** <strong>bpmNEXT</strong> ***</p>
+<p>bpmNEXT è una conferenza sul Business Process Management, con una particolarità: è pensata come uno scambio di 
+informazioni e di opinioni tra i produttori di strumenti, più che come una vetrina a fini commerciali. Utile, 
+quindi, per farsi un'idea sulle tendenze dei prodotti nel campo dei BPMS (Business Process Management Systems) 
+e del <a href="http://www.analisi-disegno.com/bpmn">BPMN (Business Process Model and Notation)</a>.</p>
+
+<p>Resoconti della conferenza da uno degli organizzatori, <a href="http://brsilver.com/bpmnext-review/">Bruce Silver</a>, 
+	da <a href="http://www.bptrends.com/deliver_file.cfm?fileType=publication&fileName=advisor20130326%2Epdf">Paul Harmon</a> 
+	e da <a href="http://www.column2.com/2013/03/bpmnext-wrapup-the-good-the-bad-and-the-best-in-show/">Sandy Kemsley</a>.</p>
+
+     <hr />
+     
+           <p>*** <strong>Requisiti e architettura software, coevoluzione</strong> ***</p>
+<p>In ogni processo di sviluppo software pragmatico, requisiti e architettura evolvono insieme.</p>
+
+<p>"The Twin Peaks of Requirements and Architecture" è il tema centrale del numero di 
+	<a href="http://www.computer.org/csdl/mags/so/2013/02/index.html">marzo / aprile 2013 di IEEE Software</a>.</p>
+
+     <hr />
+
+      <p>Se volete, potete contribuire 
+        ad ANALISI-DISEGNO:</p>
+		<ul>
+        <li>comunicando segnalazioni e commenti a <a href="mailto:adriano.comai@analisi-disegno.com">adriano.comai@analisi-disegno.com</a></li>
+        <li>facendolo conoscere ad altre persone a cui possa interessare</li>
+		</ul>
+     <p>ANALISI-DISEGNO viene spedito a chi ne fa <a href="../notiziario.html">richiesta</a>. La pubblicazione
+        non avviene con periodicit&agrave; predefinita e regolare.</p>
+      <hr />
+      <p><a href="../notiziario.html">Archivio notiziari</a> 
+        | <a href="2013-02-analisidisegnonews.html">Notiziario precedente</a> | <a href="2013-05-analisidisegnonews.html">Notiziario successivo</a></p>
+
+     <hr />
+	<p class="centered"><a href="../"> analisi-disegno.com </a>, servizi e materiali per lo sviluppo dei sistemi software, a cura di <a href="../a_comai/adriano_comai.htm">Adriano 
+  		Comai</a>. </p>
+</body>
+
+</html>

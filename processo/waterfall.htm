@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
+    "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Processo di sviluppo software a cascata (Waterfall) - analisi-disegno.com</title>
+<meta name="keywords" content="processo, cascata, metodo, metodologia, sviluppo, software" />
+<meta name="description" content="Il processo di sviluppo software waterfall, a cascata: caratteristiche e applicazione." />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="author" content="Adriano Comai" />
+<meta name="robots" content="noarchive" />
+<link rel="stylesheet" type="text/css" href="../analisi-disegno.css" />
+</head>
+
+<body>
+<p class="iniziale">analisi-disegno.com</p>
+	<p class="menu"><a href="../">Homepage</a>&nbsp;| 
+	<a href="../notiziario.html">Notiziario</a>&nbsp;| <a href="../welcome_e.html">In English</a></p>
+    <hr />
+	
+      <h1>Processo di sviluppo software a cascata (Waterfall)</h1>
+      <p>Descritto per la prima volta da Walker Royce nel 1970. Testo originale: &quot;<a href="http://www.cs.umd.edu/class/spring2003/cmsc838p/Process/waterfall.pdf" target="_blank">Managing 
+        the Development of Large Software Systems</a>&quot;, pubblicato in Proceedings 
+        of IEEE Wescon (August 1970), e in &quot;International Conference on Software 
+        Engineering - Proceedings of the 9th Conference - 1987, Monterey&quot;. </p>
+        <p>Vale la pena leggere il testo di Royce, perch&eacute; evidenzia il fatto che lui, a differenza di molti seguaci 
+		dei decenni successivi, era consapevole dei limiti del modello e proponeva dei correttivi, purtroppo raramente 
+        applicati.</p>
+      <p>La figura riportata sotto (un activity diagram <a href="../uml/uml.htm">UML</a>) non rappresenta la versione originale del processo, 
+        ma una delle sue possibili derivazioni.</p>
+      <p><img src="waterfall.jpg" alt="esempio processo a cascata" width="582" height="374" /></p>
+      <p>Nel modello a cascata, il progetto &egrave; organizzato 
+        in una sequenza di fasi, ciascuna delle quali produce un output che costituisce 
+        l'input per la fase successiva. Ad esempio, la fase di definizione dei 
+        <a href="../requisiti/requisiti.htm">requisiti</a> produce un output, la &quot;specifica dei requisiti&quot;, che 
+        entra in input alla fase di analisi. L'analisi produce la &quot;specifica 
+        di analisi&quot;, che entra in input alla fase di design. E cos&igrave; via.</p>
+      <p>All'inizio di ciascuna fase si verifica la qualit&agrave; del lavoro effettuato nella 
+        fase precedente, con possibilit&agrave; di ricicli per modifica.</p>
+      <h2>Diffusione del processo a cascata</h2>
+      <p>&Egrave; probabilmente il processo di sviluppo software pi&ugrave; diffuso al mondo, anche perch&eacute; 
+        segue il modello della catena di montaggio tipico della produzione industriale 
+        della prima met&agrave; del novecento. Ma &egrave; considerato irrimediabilmente 
+        obsoleto, ed &egrave; raro trovare esperti che lo raccomandino ancora. 
+        I settori economici competitivi e le organizzazioni attente ai costi, per cui la qualit&agrave; e produttivit&agrave; 
+        dei progetti di sviluppo software sono pi&ugrave; critici hanno da tempo 
+        abolito la pratica dello sviluppo a cascata, in quanto troppo rischioso.</p>
+      <h2>Vantaggi</h2>
+      <p>&Egrave; semplice da spiegare e da capire, quasi intuitivo (anche per chi non ha mai sviluppato software): prima 
+        si raccolgono tutti i requisiti, poi si fa tutta l'analisi, poi tutto il design, poi tutta la codifica, ...</p>
+      <p>&Egrave; semplicissimo organizzare il piano di progetto (non ci sono dubbi sulla sequenza delle fasi).</p>
+      <p>Si adatta bene a logiche organizzative e politiche del personale basate su 
+	  una <a href="../pm/SilosOrganizzativi.htm">divisione del lavoro accentuata</a>.</p>
+      <h2>Svantaggi</h2>
+      <p>&Egrave; altamente rischioso, in quanto non funziona. Le 
+        prime verifiche concrete, in termini di risultati visibili e comprensibili 
+        da committenti e utenti, arrivano verso la fine del progetto, al termine della fase di test. 
+		E quando ci si accorge che qualcosa non funziona , ossia che il sistema realizzato non corrisponde ai requisiti, 
+        impliciti ed espliciti, i tempi ed i costi del progetto aumentano in misura notevole.</p>
+      <p>Si basa su alcune assunzioni errate:</p>
+      <ul><li>Che sia possibile, nella 
+        fase iniziale del progetto, chiarire tutti i requisiti del sistema. E 
+        che sia possibile farlo senza discutere con il committente e le parti 
+        interessate nel merito delle soluzioni concrete, senza verificare l'accordo 
+        con la presentazione di prototipi utilizzabili. Questa assunzione sbagliata 
+        pu&ograve; provocare due effetti:<ol>
+        <li>che si raggiunga un accordo 
+          sulla carta, ma che non ci sia un accordo effettivo sul merito dei problemi 
+          (e che non ci si renda conto della cosa fino alla verifica finale)</li>
+        <li>che si raggiunga la &quot;paralisi 
+          dell'analisi&quot;, con il progetto che non riesce a chiarire alcune 
+          aree di ambiguit&agrave; e l'impossibilit&agrave; per il committente 
+          e le parti interessate di fornire i chiarimenti richiesti</li>
+      </ol></li>
+      <li>Che una volta ottenuto l'accordo 
+        sui requisiti (tipicamente, con la produzione di alcuni documenti testuali 
+        che specificano, in termini astratti, le funzionalit&agrave; del sistema), 
+        i requisiti stessi non cambino pi&ugrave; fino alla fine del progetto. 
+        Pu&ograve; essere vero, per progetti molto brevi. Ma non &egrave; 
+        certamente vero per progetti di complessit&agrave; media o elevata.</li>
+      <li>Che sia possibile definire 
+        i requisiti, e <a href="../pm/stime.htm">stimare tempi e costi</a> del progetto, senza possedere la 
+        competenza necessaria sugli aspetti tecnici ed implementativi. Questo 
+        non &egrave; in s&eacute; un limite del processo di sviluppo a cascata, 
+        ma della sua attuazione concreta in organizzazioni nelle quali esiste 
+        una forte divisione del lavoro. In molte realt&agrave;, la definizione 
+        dei requisiti viene effettuata da persone che 
+        non hanno le competenze tecniche necessarie allo sviluppo software. Oppure 
+        che avevano, anni addietro, competenze tecniche, ma basate sull'utilizzo 
+        di tecnologie diverse da quelle utilizzate nel progetto. E che non sono 
+        quindi in grado, da sole, di produrre stime attendibili.</li></ul>
+      <hr /> 
+        <p><a href="processosvilupposw.htm">Pagina principale sui processi di sviluppo software</a></p>
+
+     <hr />
+	<p class="centered"><a href="../"> analisi-disegno.com </a>, servizi e materiali per lo sviluppo dei sistemi software, a cura di <a href="../a_comai/adriano_comai.htm">Adriano 
+  		Comai</a>. </p>
+</body>
+
+</html>
